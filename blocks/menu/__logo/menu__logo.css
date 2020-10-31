@@ -1,0 +1,7 @@
+.menu__logo {
+  width: 105px;
+  height: 31px;
+  background-image: url(../../../images/logo-black.png);
+  background-position: center;
+  background-size: cover;
+}
