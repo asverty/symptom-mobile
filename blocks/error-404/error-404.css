@@ -1,0 +1,6 @@
+@import url(./__heading/error-404__heading.css);
+@import url(./__description/error-404__description.css);
+
+.error-404 {
+  margin-top: 30vh;
+}
