@@ -1,0 +1,9 @@
+@import url(./__heading/brands__heading.css);
+@import url(./__list/brands__list.css);
+@import url(./__list-element/brands__list-element.css);
+@import url(./__link/brands__link.css);
+
+.brands {
+  margin: 0;
+  padding: 0;
+}

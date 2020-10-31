@@ -1,0 +1,14 @@
+@import url(../vendor/fonts/Nimbus/nimbus.css);
+@import url(../blocks/page/page.css);
+@import url(../blocks/header/header.css);
+@import url(../blocks/menu/menu.css);
+@import url(../blocks/brands/brands.css);
+
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  font-family: "Nimbus Sans", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
