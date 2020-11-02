@@ -1,3 +1,9 @@
 .section__text_margin-bottom {
   margin-bottom: 80px;
 }
+
+@media screen and (max-width: 374px) {
+  .section__text_margin-bottom {
+    margin-bottom: 40px;
+  }
+}
