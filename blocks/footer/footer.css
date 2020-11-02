@@ -8,6 +8,9 @@
 @import url(./__nav-link/footer__nav-link.css);
 
 .footer {
+  /* position: absolute;
+  bottom: 0;
+  z-index: 3; */
   width: 100vw;
   background-color: black;
   display: flex;
