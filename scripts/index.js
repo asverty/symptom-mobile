@@ -69,9 +69,7 @@ const myFullpage = new fullpage('#fullpage', {
 		let numSlides = document.querySelectorAll('.section').length;
 		counter.textContent = `${destination.index + 1}/${numSlides}`
 	},
-	afterLoad: function(origin, destination, direction){
-
-	},
+	afterLoad: function(origin, destination, direction){},
 	afterRender: function(){},
 	afterResize: function(width, height){},
 	afterReBuild: function(){},
