@@ -1,0 +1,12 @@
+@import url(./__horizontal-alignment/header-main__horizontal-alignment.css);
+@import url(./__logo/header-main__logo.css);
+@import url(./__menu-button/header-main__menu-button.css);
+
+.header-main {
+  position: absolute;
+  z-index: 1;
+  margin-top: 7vh;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  padding: 0;
+}

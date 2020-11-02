@@ -1,0 +1,8 @@
+.section__heading {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 68px;
+  line-height: 60px;
+  text-transform: uppercase;
+  color: white;
+}

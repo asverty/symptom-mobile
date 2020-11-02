@@ -10,25 +10,98 @@
 </head>
 
 <body>
-  <!-- ШАПКА САЙТА -->
-  <header></header>
+
+  <!-- ШАПКА -->
+  <header class="header-main">
+    <div class="header-main__horizontal-alignment">
+      <a href="./index.html">
+        <div class="header-main__logo"></div>
+      </a>
+      <button class="header-main__menu-button">Меню</button>
+    </div>
+  </header>
+
+  <!-- ПОПАП С МЕНЮ -->
+  <div class="menu menu_hidden">
+    <div class="menu__margins">
+      <div class="menu__horizontal-alignment">
+        <a href="./index.html">
+          <div class="menu__logo"></div>
+        </a>
+        <button class="menu__close-button">Закрыть</button>
+      </div>
+      <nav class="menu__navigation">
+        <ul class="menu__list">
+          <li class="menu__list-element"><a class="menu__link" href="./brands.html">Бренды</a></li>
+          <li class="menu__list-element"><a class="menu__link" href="./categorys.html">Категории</a></li>
+        </ul>
+        <ul class="menu__list">
+          <li class="menu__list-element"><a class="menu__link" href="./log_in.html">Войти</a></li>
+          <li class="menu__list-element"><a class="menu__link" href="./wishes.html">Желания</a></li>
+          <li class="menu__list-element"><a class="menu__link" href="./cart.html">Корзина(2)</a></li>
+        </ul>
+        <ul class="menu__list">
+          <li class="menu__list-element"><a class="menu__link" href="#">Подписаться</a></li>
+          <li class="menu__list-element"><a class="menu__link" href="#">О нас</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
 
   <!-- ОСНОВНОЙ РАЗДЕЛ -->
   <main id="fullpage">
-    <section class="section"></section>
-    <section class="section"></section>
-    <section class="section"></section>
-    <section class="section"></section>
+    <section class="section section_1 active">
+      <div class="section__info">
+        <h2 class="section__heading">LIFE MAGAZINE NEW ARRIVALS</h2>
+        <p class="section__text">VERY IMPORTAN INFORMATION (VERY IMPORTANT<br>INFORMATION)</p>
+      </div>
+    </section>
+    <section class="section section_2">
+      <div class="section__info">
+        <h2 class="section__heading">50% OFF</h2>
+        <p class="section__text section__text_large">OTHER OBJECTS, ODOR OBJECTS,<br>KOLCO CIGANSCOE, +5 HP IF YOU HAVE
+          LOW<br>MANA (The following
+          brands participate in the<br>promotion).</p>
+      </div>
+    </section>
+    <section class="section section_3">
+      <div class="section__info">
+        <h2 class="section__heading">NOT CONCEPT</h2>
+        <p class="section__text section__text_margin-bottom">The concept is that there is no concept and this gives me
+          complete freedom. I don’t
+          attach myself to anything, I have a lot of space for thought, because I’m still at the beginning of the way: I
+          study transforming and this is reflected in the design.<br>I experiment a lot with forms, combine different
+          textures and minerals. This technique can be seen in rings
+          with large stones. They can not be repeated, because it uses natural stone, a copy of which can never be
+          found. My jewelry is not distributed by gender - each time it warms my soul to see a guy with a cuff or ring
+          of my design.</p>
+      </div>
+    </section>
+    <section class="section section_4">
+      <div class="section__info">
+        <h2 class="section__heading">MAKE YOUR OWN DESIGN</h2>
+        <p class="section__text section__text_margin-bottom">Here you can order your own jewelry, which will be created
+          according to your design.
+          Together we will agree on the terms of reference, estimated dates and cost of the product, and then sign an
+          agreement on its creation. We will help to realize any of your ideas - a jewelry can be made of silver or
+          gold, using precious and semiprecious stones, engraving or using enamel. The cost of the product depends on
+          the complexity of the work, as well as on the cost of the selected metals and precious and semiprecious
+          stones, but what cannot be counted in money is the joy of jewelry that will only be with you or the person to
+          whom you will give it.</p>
+      </div>
+    </section>
   </main>
 
   <!-- СЧЁТЧИК СЕКЦИЙ -->
   <span class="counter">1/4</span>
 
-  <!-- ПОДВАЛ САЙТА -->
+  <!-- ПОДВАЛ -->
   <footer></footer>
 
   <script type="text/javascript" src="./node_modules/fullpage.js/dist/fullpage.js"></script>
   <script type="text/javascript" src="./scripts/index.js"></script>
+  <script type="text/javascript" src="./scripts/menu.js"></script>
+
 </body>
 
 </html>
