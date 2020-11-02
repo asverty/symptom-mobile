@@ -6,3 +6,10 @@
   text-transform: uppercase;
   color: white;
 }
+
+@media screen and (max-width: 374px) {
+  .section__heading {
+    font-size: 42px;
+    line-height: 38px;
+  }
+}

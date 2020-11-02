@@ -1,0 +1,16 @@
+@import url(./__contacts/footer__contacts.css);
+@import url(./__contact/footer__contact.css);
+@import url(./__contact-type/footer__contact-type.css);
+@import url(./__contact-data/footer__contact-data.css);
+@import url(./__navigation/footer__navigation.css);
+@import url(./__nav-list/footer__nav-list.css);
+@import url(./__nav-list-element/footer__nav-list-element.css);
+@import url(./__nav-link/footer__nav-link.css);
+
+.footer {
+  width: 100vw;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}

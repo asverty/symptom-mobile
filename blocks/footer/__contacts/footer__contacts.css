@@ -1,0 +1,10 @@
+.footer__contacts {
+  margin-top: 20px;
+  margin-bottom: 0;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}

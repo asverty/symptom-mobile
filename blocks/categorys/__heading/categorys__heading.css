@@ -6,3 +6,11 @@
   line-height: 43,2px;
   text-transform: uppercase;
 }
+
+@media screen and (max-width: 374px) {
+  .categorys__heading {
+    margin-bottom: 10px;
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
