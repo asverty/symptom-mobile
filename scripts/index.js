@@ -64,8 +64,14 @@ const myFullpage = new fullpage('#fullpage', {
 	lazyLoading: true,
 
 	//events
-	onLeave: function(origin, destination, direction){},
-	afterLoad: function(origin, destination, direction){},
+	onLeave: function(origin, destination, direction){
+		let counter = document.querySelector('.counter');
+		let numSlides = document.querySelectorAll('.section').length;
+		counter.textContent = `${destination.index + 1}/${numSlides}`
+	},
+	afterLoad: function(origin, destination, direction){
+
+	},
 	afterRender: function(){},
 	afterResize: function(width, height){},
 	afterReBuild: function(){},
