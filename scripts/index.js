@@ -77,3 +77,12 @@ const myFullpage = new fullpage('#fullpage', {
 	afterSlideLoad: function(section, origin, destination, direction){},
 	onSlideLeave: function(section, origin, destination, direction){}
 });
+
+
+// МЕНЮ
+const menu = document.querySelector('.menu');
+const menuButton = document.querySelector('.header__menu-button');
+const closeMenuButton = document.querySelector('.menu__close-button');
+const toggleMenu = () => menu.classList.toggle('menu_hidden');
+menuButton.addEventListener('click', toggleMenu);
+closeMenuButton.addEventListener('click', toggleMenu);

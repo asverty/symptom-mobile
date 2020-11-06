@@ -8,61 +8,61 @@
   <link rel="stylesheet" type="text/css" href="./pages/categorys.css" />
 </head>
 
-<body>
-  <div class="page">
+<body class="page">
 
-    <!-- ШАПКА -->
-    <header class="header">
-      <a href="./index.html">
-        <div class="header__logo"></div>
-      </a>
-      <button class="header__menu-button">Меню</button>
-    </header>
+  <!-- ШАПКА -->
+  <header class="header">
+    <a href="./index.html">
+      <div class="header__logo"></div>
+    </a>
+    <button class="header__menu-button">Меню</button>
+  </header>
 
-    <!-- ПОПАП С МЕНЮ -->
-    <div class="menu menu_hidden">
-      <div class="menu__margins">
-        <div class="menu__horizontal-alignment">
-          <a href="./index.html"><div class="menu__logo"></div></a>
-          <button class="menu__close-button">Закрыть</button>
-        </div>
-        <nav class="menu__navigation">
-          <ul class="menu__list">
-            <li class="menu__list-element"><a class="menu__link" href="./brands.html">Бренды</a></li>
-            <li class="menu__list-element"><a class="menu__link" href="#">Категории</a></li>
-          </ul>
-          <ul class="menu__list">
-            <li class="menu__list-element"><a class="menu__link" href="./log_in.html">Войти</a></li>
-            <li class="menu__list-element"><a class="menu__link" href="./wishes.html">Желания</a></li>
-            <li class="menu__list-element"><a class="menu__link" href="./cart.html">Корзина(2)</a></li>
-          </ul>
-          <ul class="menu__list">
-            <li class="menu__list-element"><a class="menu__link" href="#">Подписаться</a></li>
-            <li class="menu__list-element"><a class="menu__link" href="#">О нас</a></li>
-          </ul>
-        </nav>
+  <!-- МЕНЮ -->
+  <div class="menu menu_hidden">
+    <div class="menu__container">
+      <div class="menu__horizontal-alignment">
+        <a href="./index.html">
+          <div class="menu__logo"></div>
+        </a>
+        <button class="menu__close-button">Закрыть</button>
       </div>
+      <nav class="menu__navigation">
+        <ul class="menu__list">
+          <li class="menu__list-element"><a class="menu__link" href="./brands.html">Бренды</a></li>
+          <li class="menu__list-element"><a class="menu__link" href="#">Категории</a></li>
+        </ul>
+        <ul class="menu__list">
+          <li class="menu__list-element"><a class="menu__link" href="./log_in.html">Войти</a></li>
+          <li class="menu__list-element"><a class="menu__link" href="./wishes.html">Желания</a></li>
+          <li class="menu__list-element"><a class="menu__link" href="./cart.html">Корзина(2)</a></li>
+        </ul>
+        <ul class="menu__list">
+          <li class="menu__list-element"><a class="menu__link" href="#">Подписаться</a></li>
+          <li class="menu__list-element"><a class="menu__link" href="#">О нас</a></li>
+        </ul>
+      </nav>
     </div>
-
-    <!-- ОСНОВНОЙ РАЗДЕЛ -->
-    <main class="categorys">
-      <h2 class="categorys__heading">Категории:</h2>
-      <ul class="categorys__list">
-        <li class="categorys__list-element"><a href="#" class="categorys__link">Кулоны</a></li>
-        <li class="categorys__list-element"><a href="#" class="categorys__link">Серьги</a></li>
-        <li class="categorys__list-element"><a href="#" class="categorys__link">Кольца</a></li>
-        <li class="categorys__list-element"><a href="#" class="categorys__link">Браслеты</a></li>
-        <li class="categorys__list-element"><a href="#" class="categorys__link">Заколки</a></li>
-      </ul>
-      <ul class="categorys__list">
-        <li class="categorys__list-element"><a href="#" class="categorys__link">Парфюмерия</a></li>
-        <li class="categorys__list-element"><a href="#" class="categorys__link">Домой</a></li>
-      </ul>
-    </main>
-
   </div>
 
-  <script type="text/javascript" src="./scripts/menu.js"></script>
+  <!-- ОСНОВНОЙ РАЗДЕЛ -->
+  <main class="categorys">
+    <h2 class="categorys__heading">Категории:</h2>
+    <ul class="categorys__list">
+      <li class="categorys__list-element"><a href="#" class="categorys__link">Подвески</a></li>
+      <li class="categorys__list-element"><a href="#" class="categorys__link">Серьги</a></li>
+      <li class="categorys__list-element"><a href="#" class="categorys__link">Кольца</a></li>
+      <li class="categorys__list-element"><a href="#" class="categorys__link">Каффы</a></li>
+      <li class="categorys__list-element"><a href="#" class="categorys__link">Браслеты</a></li>
+      <li class="categorys__list-element"><a href="#" class="categorys__link">Заколки</a></li>
+    </ul>
+    <ul class="categorys__list">
+      <li class="categorys__list-element"><a href="#" class="categorys__link">Головные уборы</a></li>
+      <li class="categorys__list-element"><a href="#" class="categorys__link">Парфюм</a></li>
+    </ul>
+  </main>
+
+  <script src="./scripts/categorys.js"></script>
 
 </body>
 

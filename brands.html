@@ -8,63 +8,65 @@
   <link rel="stylesheet" type="text/css" href="./pages/brands.css" />
 </head>
 
-<body>
-  <div class="page">
+<body class="page">
 
-    <!-- ШАПКА -->
-    <header class="header">
-      <a href="./index.html">
-        <div class="header__logo"></div>
-      </a>
-      <button class="header__menu-button">Меню</button>
-    </header>
+  <!-- ШАПКА -->
+  <header class="header">
+    <a href="./index.html">
+      <div class="header__logo"></div>
+    </a>
+    <button class="header__menu-button">Меню</button>
+  </header>
 
-    <!-- ПОПАП С МЕНЮ -->
-    <div class="menu menu_hidden">
-      <div class="menu__margins">
-        <div class="menu__horizontal-alignment">
-          <a href="./index.html">
-            <div class="menu__logo"></div>
-          </a>
-          <button class="menu__close-button">Закрыть</button>
-        </div>
-        <nav class="menu__navigation">
-          <ul class="menu__list">
-            <li class="menu__list-element"><a class="menu__link" href="#">Бренды</a></li>
-            <li class="menu__list-element"><a class="menu__link" href="./categorys.html">Категории</a></li>
-          </ul>
-          <ul class="menu__list">
-            <li class="menu__list-element"><a class="menu__link" href="./log_in.html">Войти</a></li>
-            <li class="menu__list-element"><a class="menu__link" href="./wishes.html">Желания</a></li>
-            <li class="menu__list-element"><a class="menu__link" href="./cart.html">Корзина(2)</a></li>
-          </ul>
-          <ul class="menu__list">
-            <li class="menu__list-element"><a class="menu__link" href="#">Подписаться</a></li>
-            <li class="menu__list-element"><a class="menu__link" href="#">О нас</a></li>
-          </ul>
-        </nav>
+  <!-- МЕНЮ -->
+  <div class="menu menu_hidden">
+    <div class="menu__container">
+      <div class="menu__horizontal-alignment">
+        <a href="./index.html">
+          <div class="menu__logo"></div>
+        </a>
+        <button class="menu__close-button">Закрыть</button>
       </div>
+      <nav class="menu__navigation">
+        <ul class="menu__list">
+          <li class="menu__list-element"><a class="menu__link" href="#">Бренды</a></li>
+          <li class="menu__list-element"><a class="menu__link" href="./categorys.html">Категории</a></li>
+        </ul>
+        <ul class="menu__list">
+          <li class="menu__list-element"><a class="menu__link" href="./log_in.html">Войти</a></li>
+          <li class="menu__list-element"><a class="menu__link" href="./wishes.html">Желания</a></li>
+          <li class="menu__list-element"><a class="menu__link" href="./cart.html">Корзина(2)</a></li>
+        </ul>
+        <ul class="menu__list">
+          <li class="menu__list-element"><a class="menu__link" href="#">Подписаться</a></li>
+          <li class="menu__list-element"><a class="menu__link" href="#">О нас</a></li>
+        </ul>
+      </nav>
     </div>
-
-    <!-- ОСНОВНОЙ РАЗДЕЛ -->
-    <main class="categorys">
-      <h2 class="categorys__heading">Бренды:</h2>
-      <ul class="categorys__list">
-        <li class="categorys__list-element"><a href="#" class="categorys__link">Other Objects</a></li>
-        <li class="categorys__list-element"><a href="#" class="categorys__link">Sub rose</a></li>
-        <li class="categorys__list-element"><a href="#" class="categorys__link">BLACK FORM</a></li>
-        <li class="categorys__list-element"><a href="#" class="categorys__link">HUBRIS</a></li>
-        <li class="categorys__list-element"><a href="#" class="categorys__link">Arha</a></li>
-        <li class="categorys__list-element"><a href="#" class="categorys__link">1991</a></li>
-        <li class="categorys__list-element"><a href="#" class="categorys__link">Atauchi</a></li>
-        <li class="categorys__list-element"><a href="#" class="categorys__link">Odor objects</a></li>
-        <li class="categorys__list-element"><a href="#" class="categorys__link">Anna Maslowskaya</a></li>
-      </ul>
-    </main>
-
   </div>
 
-  <script type="text/javascript" src="./scripts/menu.js"></script>
+  <!-- ОСНОВНОЙ РАЗДЕЛ -->
+  <main class="brands">
+    <h2 class="brands__heading">Бренды:</h2>
+    <ul class="brands__list">
+      <li class="brands__list-element"><a href="#" class="brands__link">Other Objects</a></li>
+      <li class="brands__list-element"><a href="#" class="brands__link">Sub Rosa</a></li>
+      <li class="brands__list-element"><a href="#" class="brands__link">Black.Form</a></li>
+      <li class="brands__list-element"><a href="#" class="brands__link">Liberte</a></li>
+      <li class="brands__list-element"><a href="#" class="brands__link">Not Concept</a></li>
+      <li class="brands__list-element"><a href="#" class="brands__link">Anna Maslovskaya</a></li>
+      <li class="brands__list-element"><a href="#" class="brands__link">Arha</a></li>
+      <li class="brands__list-element"><a href="#" class="brands__link">Perfert</a></li>
+      <li class="brands__list-element"><a href="#" class="brands__link">HUBRIS</a></li>
+      <li class="brands__list-element"><a href="#" class="brands__link">Behurr</a></li>
+      <li class="brands__list-element"><a href="#" class="brands__link">1991</a></li>
+      <li class="brands__list-element"><a href="#" class="brands__link">Atauchi</a></li>
+      <li class="brands__list-element"><a href="#" class="brands__link">48</a></li>
+      <li class="brands__list-element"><a href="#" class="brands__link">Odor objects</a></li>
+    </ul>
+  </main>
+
+  <script src="./scripts/brands.js"></script>
 
 </body>
 

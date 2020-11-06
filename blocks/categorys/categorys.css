@@ -1,9 +1,0 @@
-@import url(./__heading/categorys__heading.css);
-@import url(./__list/categorys__list.css);
-@import url(./__list-element/categorys__list-element.css);
-@import url(./__link/categorys__link.css);
-
-.categorys {
-  margin: 0;
-  padding: 0;
-}
