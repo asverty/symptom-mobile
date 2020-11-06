@@ -58,7 +58,7 @@ ol, ul, li, a, button {
 .header__logo {
   width: 105px;
   height: 31px;
-  background-image: url(../../../images/logo-black.png);
+  background-image: url(../images/logo-black.png);
   background-size: cover;
 }
 
@@ -101,7 +101,7 @@ ol, ul, li, a, button {
 .menu__logo {
   width: 105px;
   height: 31px;
-  background-image: url(../../../images/logo-black.png);
+  background-image: url(../images/logo-black.png);
   background-size: cover;
 }
 
