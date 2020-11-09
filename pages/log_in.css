@@ -1,0 +1,258 @@
+@font-face {
+  font-family: "Nimbus Sans";
+  src: url("../vendor/fonts/Nimbus/NimbusSanL-Reg.ttf") format("truetype"),
+  url("../vendor/fonts/Nimbus/NimbusSanL-Reg.woff") format("woff"),
+  url("../vendor/fonts/Nimbus/NimbusSanL-Reg.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* СТИЛИ ПО УМОЛЧАНИЮ */
+body, header, main, footer, div, 
+h1, h2, h3, h4, h5, h6, p, span,
+ol, ul, li, a, button, input, form {
+  
+  /* отступы */
+  margin: 0;
+  padding: 0;
+
+  /* текст */
+  font-family: "Nimbus Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.15;
+  text-decoration: none;
+  color: black;
+
+  /* декорация */
+  list-style: none;
+  outline-style: none;
+  outline: none;
+  border: none;
+}
+
+
+/* СТИЛИ СТРАНИЦЫ */
+.page {
+  width: 92vw;
+  min-height: 86vh;
+  margin-top: 7vh;
+  margin-bottom: 7vh;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  background-color: white;
+}
+
+
+/* ШАПКА */
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_hidden {
+  display: none;
+}
+
+.header__logo {
+  width: 105px;
+  height: 31px;
+  background-image: url(../images/logo-black.png);
+  background-size: cover;
+}
+
+.header__menu-button {
+  font-size: 18px;
+  line-height: 21,6px;
+  text-transform: uppercase;
+  background-color: transparent;
+}
+
+
+/* МЕНЮ */
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+}
+
+.menu_hidden {
+  display: none;
+}
+
+.menu__container {
+  width: 92vw;
+  height: 86vh;
+  margin-top: 7vh;
+  margin-bottom: 7vh;
+  margin-left: 4vw;
+  margin-right: 4vw;
+}
+
+.menu__horizontal-alignment {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__logo {
+  width: 105px;
+  height: 31px;
+  background-image: url(../images/logo-black.png);
+  background-size: cover;
+}
+
+.menu__close-button {
+  font-size: 18px;
+  line-height: 21,6px;
+  text-transform: uppercase;
+  background-color: transparent;
+}
+
+.menu__navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.menu__list {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.menu__list-element {
+  margin-bottom: 10px;
+}
+
+.menu__link {
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 374px) {
+  .menu__list {
+    margin-bottom: 0;
+  }
+
+  .menu__list-element {
+    margin-bottom: 4px;
+  }
+
+  .menu__link {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-height: 580px) {
+  .menu__list {
+    margin-bottom: 0;
+  }
+
+  .menu__list-element {
+    margin-bottom: 4px;
+  }
+
+  .menu__link {
+    font-size: 24px;
+  }
+}
+
+
+/* АВТОРИЗАЦИЯ */
+.authorization_hidden {
+  display: none;
+}
+
+.authorization__heading {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 36px;
+  line-height: 43,2px;
+  text-transform: uppercase;
+}
+
+.authorization__form {
+  display: flex;
+  flex-direction: column;
+  height: 66vh;
+}
+
+.authorization__alignment {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.authorization__type {
+  font-size: 18px;
+  line-height: 21.6px;
+  text-transform: uppercase;
+}
+
+.authorization__input {
+  font-size: 36px;
+  line-height: 43.2px;
+  color: #bdbdbd;
+}
+
+.authorization__input::placeholder {
+  color: #bdbdbd;
+}
+
+.authorization__buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.authorization__button {
+  width: 171px;
+  height: 55px;
+  font-size: 18px;
+  line-height: 21.6px;
+  border-radius: 41px;
+}
+
+.authorization__button_black {
+  color: white;
+  background-color: black;
+}
+
+.authorization__button_white {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  border: solid 1px black;
+  background-color: white;
+}
+
+@media screen and (max-width: 374px) {
+  .authorization__heading {
+    margin-bottom: 30px;
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+
+@media screen and (min-width: 376px) {
+  .authorization__button {
+    width: 44vw;
+  }
+
+  .authorization__button-black {
+    width: 44vw;
+    margin-right: 4vw;
+  }
+}
+
+@media screen and (max-height: 580px) {
+  .authorization__form {
+    height: 56vh;
+  }
+}
