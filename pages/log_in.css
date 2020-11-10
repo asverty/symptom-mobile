@@ -183,6 +183,7 @@ ol, ul, li, a, button, input, form {
 }
 
 .authorization__alignment {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 40px;
@@ -202,6 +203,14 @@ ol, ul, li, a, button, input, form {
 
 .authorization__input::placeholder {
   color: #bdbdbd;
+}
+
+.authorization__error {
+  position: absolute;
+  top: 64px;
+  font-size: 12px;
+  line-height: 14px;
+  color: red;
 }
 
 .authorization__buttons {
