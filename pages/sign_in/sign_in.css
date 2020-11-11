@@ -322,9 +322,3 @@ ol, ul, li, a, button, input, form {
     margin-bottom: 30px;
   }
 }
-
-@media screen and (max-height: 580px) {
-  .authorization__form {
-    height: 56vh;
-  }
-}
