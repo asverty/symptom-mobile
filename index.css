@@ -1,8 +1,8 @@
 @font-face {
   font-family: "Nimbus Sans";
-  src: url("../vendor/fonts/Nimbus/NimbusSanL-Reg.ttf") format("truetype"),
-  url("../vendor/fonts/Nimbus/NimbusSanL-Reg.woff") format("woff"),
-  url("../vendor/fonts/Nimbus/NimbusSanL-Reg.woff2") format("woff2");
+  src: url("./vendor/fonts/Nimbus/NimbusSanL-Reg.ttf") format("truetype"),
+  url("./vendor/fonts/Nimbus/NimbusSanL-Reg.woff") format("woff"),
+  url("./vendor/fonts/Nimbus/NimbusSanL-Reg.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -55,7 +55,7 @@ ol, ul, li, a, button {
 .header__logo {
   width: 105px;
   height: 31px;
-  background-image: url(../images/logo-white.png);
+  background-image: url(./images/logo-white.png);
   background-size: cover;
 }
 
@@ -99,7 +99,7 @@ ol, ul, li, a, button {
 .menu__logo {
   width: 105px;
   height: 31px;
-  background-image: url(../images/logo-black.png);
+  background-image: url(./images/logo-black.png);
   background-size: cover;
 }
 
@@ -173,19 +173,19 @@ ol, ul, li, a, button {
 }
 
 .section_1 {
-  background-image: url(../images/bg-section-1.jpg);
+  background-image: url(./images/bg-section-1.jpg);
 }
 
 .section_2 {
-  background-image: url(../images/bg-section-2.jpg);
+  background-image: url(./images/bg-section-2.jpg);
 }
 
 .section_3 {
-  background-image: url(../images/bg-section-3.jpg);
+  background-image: url(./images/bg-section-3.jpg);
 }
 
 .section_4 {
-  background-image: url(../images/bg-section-4.jpg);
+  background-image: url(./images/bg-section-4.jpg);
 }
 
 .section__info {

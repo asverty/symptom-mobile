@@ -5,14 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0">
   <title>Войти | Магазин "SYMPTOM"</title>
-  <link rel="stylesheet" href="./pages/log_in.css" />
+  <link rel="stylesheet" href="./log_in.css" />
 </head>
 
 <body class="page">
 
   <!-- ШАПКА -->
   <header class="header">
-    <a href="./index.html">
+    <a href="../../index.html">
       <div class="header__logo"></div>
     </a>
     <button class="header__menu-button">Меню</button>
@@ -22,20 +22,20 @@
   <div class="menu menu_hidden">
     <div class="menu__container">
       <div class="menu__horizontal-alignment">
-        <a href="./index.html">
+        <a href="../../index.html">
           <div class="menu__logo"></div>
         </a>
         <button class="menu__close-button">Закрыть</button>
       </div>
       <nav class="menu__navigation">
         <ul class="menu__list">
-          <li class="menu__list-element"><a class="menu__link" href="#">Бренды</a></li>
-          <li class="menu__list-element"><a class="menu__link" href="./categorys.html">Категории</a></li>
+          <li class="menu__list-element"><a class="menu__link" href="../brands/brands.html">Бренды</a></li>
+          <li class="menu__list-element"><a class="menu__link" href="../categorys/categorys.html">Категории</a></li>
         </ul>
         <ul class="menu__list">
-          <li class="menu__list-element"><a class="menu__link" href="./log_in.html">Войти</a></li>
-          <li class="menu__list-element"><a class="menu__link" href="./wishes.html">Желания</a></li>
-          <li class="menu__list-element"><a class="menu__link" href="./cart.html">Корзина(2)</a></li>
+          <li class="menu__list-element"><a class="menu__link" href="../log_in/log_in.html">Войти</a></li>
+          <li class="menu__list-element"><a class="menu__link" href="../wishes/wishes.html">Желания</a></li>
+          <li class="menu__list-element"><a class="menu__link" href="../cart/cart.html">Корзина(2)</a></li>
         </ul>
         <ul class="menu__list">
           <li class="menu__list-element"><a class="menu__link" href="#">Подписаться</a></li>
@@ -49,24 +49,33 @@
   <main class="authorization">
     <h2 class="authorization__heading">Log in</h2>
     <form class="authorization__form">
+
+      <!-- e-mail -->
       <div class="authorization__alignment">
         <p class="authorization__type">Your E-mail:</p>
         <input class="authorization__input" type="email" required placeholder="E-mail">
-        <span class="authorization__error">Введённый текст не является адресом электронной почты. Пожалуйста, введите корректный адрес.</span>
+        <span class="authorization__error">Введённый текст не является адресом электронной почты. Пожалуйста, введите
+          корректный адрес.</span>
       </div>
+
+      <!-- пароль -->
       <div class="authorization__alignment">
         <p class="authorization__type">Password:</p>
         <input class="authorization__input" type="password" required placeholder="********">
-        <span class="authorization__error">Пароль не верный. Пожалуйста, убедитесь в правильности регистра и введите пароль заново.</span>
+        <span class="authorization__error">Пароль не верный. Пожалуйста, убедитесь в правильности регистра и введите
+          пароль заново.</span>
       </div>
+
+      <!-- кнопки -->
       <div class="authorization__buttons">
         <button class="authorization__button authorization__button_black" type="submit">Log in</button>
-        <a class="authorization__button authorization__button_white" href="./sign_in.html">Sign in</a>
+        <a class="authorization__button authorization__button_white" href="../sign_in/sign_in.html">Sign in</a>
       </div>
+
     </form>
   </main>
 
-  <script src="./scripts/log_in.js"></script>
+  <script src="./log_in.js"></script>
 
 </body>
 

@@ -1,8 +1,8 @@
 @font-face {
   font-family: "Nimbus Sans";
-  src: url("../vendor/fonts/Nimbus/NimbusSanL-Reg.ttf") format("truetype"),
-  url("../vendor/fonts/Nimbus/NimbusSanL-Reg.woff") format("woff"),
-  url("../vendor/fonts/Nimbus/NimbusSanL-Reg.woff2") format("woff2");
+  src: url("../../vendor/fonts/Nimbus/NimbusSanL-Reg.ttf") format("truetype"),
+  url("../../vendor/fonts/Nimbus/NimbusSanL-Reg.woff") format("woff"),
+  url("../../vendor/fonts/Nimbus/NimbusSanL-Reg.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -59,7 +59,7 @@ ol, ul, li, a, button, input, form {
 .header__logo {
   width: 105px;
   height: 31px;
-  background-image: url(../images/logo-black.png);
+  background-image: url(../../images/logo-black.png);
   background-size: cover;
 }
 
@@ -102,7 +102,7 @@ ol, ul, li, a, button, input, form {
 .menu__logo {
   width: 105px;
   height: 31px;
-  background-image: url(../images/logo-black.png);
+  background-image: url(../../images/logo-black.png);
   background-size: cover;
 }
 
@@ -179,7 +179,6 @@ ol, ul, li, a, button, input, form {
 .authorization__form {
   display: flex;
   flex-direction: column;
-  height: 66vh;
 }
 
 .authorization__alignment {
@@ -198,7 +197,7 @@ ol, ul, li, a, button, input, form {
 .authorization__input {
   font-size: 36px;
   line-height: 43.2px;
-  color: #bdbdbd;
+  color: black;
 }
 
 .authorization__input::placeholder {
@@ -207,16 +206,71 @@ ol, ul, li, a, button, input, form {
 
 .authorization__error {
   position: absolute;
-  top: 64px;
-  font-size: 12px;
-  line-height: 14px;
-  color: red;
+  bottom: -20px;
+  font-size: 14px;
+  line-height: 16.8px;
+  color: #EB5757;
+}
+
+.authorization__checkboxes {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 70px;
+}
+
+.authorization__label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.authorization__ckeckbox-true {
+  position: absolute; 
+  opacity: 0;
+}
+
+.authorization__ckeckbox-fake {
+  position: relative;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  background-image: url(../../images/checkbox-circle.svg);
+  background-position: center;
+  background-size: cover;
+}
+
+.authorization__ckeckbox-fake::before {
+  position: absolute;
+  display: flex;
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-image: url(../../images/checkbox-cross.svg);
+  background-position: center;
+  background-size: cover;
+  opacity: 0;
+}
+
+.authorization__ckeckbox-true:checked + 
+.authorization__ckeckbox-fake::before {
+  opacity: 1;
+}
+
+.authorization__ckeckbox-caption {
+  margin-left: 20px;
+}
+
+.authorization__ckeckbox-text {
+  font-size: 10px;
+  line-height: 12px;
 }
 
 .authorization__buttons {
   display: flex;
   justify-content: space-between;
   margin-top: auto;
+  margin-bottom: 50px;
 }
 
 .authorization__button {
@@ -257,6 +311,12 @@ ol, ul, li, a, button, input, form {
   .authorization__button-black {
     width: 44vw;
     margin-right: 4vw;
+  }
+}
+
+@media screen and (max-height: 811px) {
+  .authorization__checkboxes {
+    margin-bottom: 30px;
   }
 }
 

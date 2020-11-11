@@ -1,8 +1,8 @@
 @font-face {
   font-family: "Nimbus Sans";
-  src: url("../vendor/fonts/Nimbus/NimbusSanL-Reg.ttf") format("truetype"),
-  url("../vendor/fonts/Nimbus/NimbusSanL-Reg.woff") format("woff"),
-  url("../vendor/fonts/Nimbus/NimbusSanL-Reg.woff2") format("woff2");
+  src: url("../../../vendor/fonts/Nimbus/NimbusSanL-Reg.ttf") format("truetype"),
+  url("../../../vendor/fonts/Nimbus/NimbusSanL-Reg.woff") format("woff"),
+  url("../../../vendor/fonts/Nimbus/NimbusSanL-Reg.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -10,8 +10,8 @@
 
 /* СТИЛИ ПО УМОЛЧАНИЮ */
 body, header, main, footer, div, 
-h1, h2, h3, h4, h5, h6, p, span,
-ol, ul, li, a, button {
+h1, h2, h3, h4, h5, h6, p, span, img,
+ol, ul, li, a, button, input, form {
   
   /* отступы */
   margin: 0;
@@ -29,6 +29,7 @@ ol, ul, li, a, button {
   /* декорация */
   list-style: none;
   outline-style: none;
+  outline: none;
   border: none;
 }
 
@@ -58,7 +59,7 @@ ol, ul, li, a, button {
 .header__logo {
   width: 105px;
   height: 31px;
-  background-image: url(../images/logo-black.png);
+  background-image: url(../../../images/logo-black.png);
   background-size: cover;
 }
 
@@ -101,7 +102,7 @@ ol, ul, li, a, button {
 .menu__logo {
   width: 105px;
   height: 31px;
-  background-image: url(../images/logo-black.png);
+  background-image: url(../../../images/logo-black.png);
   background-size: cover;
 }
 
@@ -161,48 +162,132 @@ ol, ul, li, a, button {
   }
 }
 
-
-/* КАТЕГОРИИ */
-.categorys_hidden {
+.brand_hidden {
   display: none;
 }
 
-.categorys__heading {
+.brand__name {
   margin-top: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   font-size: 36px;
-  line-height: 43,2px;
+  line-height: 43.2px;
+}
+
+.brand__description {
+  margin-bottom: 90px;
+  font-size: 14px;
+  line-height: 16.8px;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 16px;
+  overflow: auto;
+}
+
+.filter {
+  margin-right: 30px;
+  font-size: 16px;
+  line-height: 19.2px;
   text-transform: uppercase;
 }
 
-.categorys__list {
-  margin-bottom: 60px;
+.filter:last-of-type {
+  margin-right: 0;
 }
 
-.categorys__list-element {
-  margin-bottom: 20px;
+.cards {
+  display: grid;
+  grid-template-columns: 46vw 46vw;
+  grid-template-rows: auto;
+  grid-auto-flow: dense;
 }
 
-.categorys__link {
-  font-size: 18px;
+.card_square {
+  position: relative;
+  width: 46vw;
+  height: 46vw;
+  grid-column: span 1;
+  grid-row: span 1;
 }
 
-@media screen and (max-width: 374px) {
-  .categorys__heading {
-    margin-bottom: 30px;
-    font-size: 32px;
-    line-height: 38px;
-  }
+.card_vertical {
+  position: relative;
+  width: 46vw;
+  height: 92vw;
+  grid-column: span 1;
+  grid-row: span 2;
+}
 
-  .categorys__list {
-    margin-bottom: 36px;
-  }
+.card_horizontal {
+  position: relative;
+  width: 92vw;
+  height: 46vw;
+  grid-column: span 2;
+  grid-row: span 1;
+}
 
-  .categorys__list-element {
-    margin-bottom: 12px;
-  }
+.card__image {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
 
-  .categorys__link {
-    font-size: 14px;
-  }
+.card__image_square {
+  width: 46vw;
+  height: 46vw;
+}
+
+.card__image_vertical {
+  width: 46vw;
+  height: 92vw;
+}
+
+.card__image_horizontal {
+  width: 92vw;
+  height: 46vw;
+}
+
+.card__info {
+  position: absolute;
+  bottom: 18px;
+  left: 20px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__title {
+  display: flex;
+  align-items: baseline;
+}
+
+.card__name {
+  font-size: 14px;
+  line-height: 16.8px;
+}
+
+.card__material {
+  font-size: 10px;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+
+.card__price {
+  font-size: 10px;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+
+.card__like {
+  position: absolute;
+  bottom: 24px;
+  right: 20px;
+  z-index: 3;
+  width: 19px;
+  height: 16px;
+  background-image: url(../../../images/like.svg);
+  background-position: center;
+  background-size: cover;
 }

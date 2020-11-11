@@ -1,8 +1,8 @@
 @font-face {
   font-family: "Nimbus Sans";
-  src: url("../vendor/fonts/Nimbus/NimbusSanL-Reg.ttf") format("truetype"),
-  url("../vendor/fonts/Nimbus/NimbusSanL-Reg.woff") format("woff"),
-  url("../vendor/fonts/Nimbus/NimbusSanL-Reg.woff2") format("woff2");
+  src: url("../../vendor/fonts/Nimbus/NimbusSanL-Reg.ttf") format("truetype"),
+  url("../../vendor/fonts/Nimbus/NimbusSanL-Reg.woff") format("woff"),
+  url("../../vendor/fonts/Nimbus/NimbusSanL-Reg.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -58,7 +58,7 @@ ol, ul, li, a, button {
 .header__logo {
   width: 105px;
   height: 31px;
-  background-image: url(../images/logo-black.png);
+  background-image: url(../../images/logo-black.png);
   background-size: cover;
 }
 
@@ -101,7 +101,7 @@ ol, ul, li, a, button {
 .menu__logo {
   width: 105px;
   height: 31px;
-  background-image: url(../images/logo-black.png);
+  background-image: url(../../images/logo-black.png);
   background-size: cover;
 }
 
@@ -162,21 +162,47 @@ ol, ul, li, a, button {
 }
 
 
-/* ОШИБКА 404 */
-.error-404 {
-  margin-top: 30vh;
-}
-
-.error-404_hidden {
+/* КАТЕГОРИИ */
+.categorys_hidden {
   display: none;
 }
 
-.error-404__heading {
-  margin-bottom: 36px;
+.categorys__heading {
+  margin-top: 20px;
+  margin-bottom: 40px;
   font-size: 36px;
+  line-height: 43,2px;
+  text-transform: uppercase;
 }
 
-.error-404__description {
+.categorys__list {
+  margin-bottom: 60px;
+}
+
+.categorys__list-element {
+  margin-bottom: 20px;
+}
+
+.categorys__link {
   font-size: 18px;
-  text-transform: uppercase;
+}
+
+@media screen and (max-width: 374px) {
+  .categorys__heading {
+    margin-bottom: 30px;
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .categorys__list {
+    margin-bottom: 36px;
+  }
+
+  .categorys__list-element {
+    margin-bottom: 12px;
+  }
+
+  .categorys__link {
+    font-size: 14px;
+  }
 }
