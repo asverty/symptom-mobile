@@ -37,6 +37,7 @@ ol, ul, li, a, button, input, form {
 /* СТИЛИ СТРАНИЦЫ */
 .page {
   width: 92vw;
+  min-height: 86vh;
   margin-top: 7vh;
   margin-bottom: 7vh;
   margin-left: 4vw;
@@ -314,11 +315,5 @@ ol, ul, li, a, button, input, form {
   .authorization__button-black {
     width: 44vw;
     margin-right: 4vw;
-  }
-}
-
-@media screen and (max-height: 811px) {
-  .authorization__checkboxes {
-    margin-bottom: 30px;
   }
 }
