@@ -51,7 +51,7 @@ body {
 .logo {
   width: 105px;
   height: 31px;
-  background-image: url(../../images/logo-white.png);
+  background-image: url(./images/logo-white.png);
   background-size: cover;
 }
 
@@ -94,7 +94,7 @@ body {
 .fake-logo {
   width: 105px;
   height: 31px;
-  background-image: url(../../images/logo-black.png);
+  background-image: url(./images/logo-black.png);
   background-size: cover;
 }
 
