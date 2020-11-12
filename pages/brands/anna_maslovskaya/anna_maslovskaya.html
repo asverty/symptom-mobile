@@ -8,50 +8,48 @@
   <link rel="stylesheet" href="./anna_maslovskaya.css" />
 </head>
 
-<body class="page">
+<body>
 
   <!-- ШАПКА -->
   <header class="header">
     <a href="../../../index.html">
-      <div class="header__logo"></div>
+      <div class="logo"></div>
     </a>
-    <button class="header__menu-button">Меню</button>
+    <button class="menu-button">Меню</button>
   </header>
 
   <!-- МЕНЮ -->
-  <div class="menu menu_hidden">
-    <div class="menu__container">
-      <div class="menu__horizontal-alignment">
-        <a href="../../../index.html">
-          <div class="menu__logo"></div>
-        </a>
-        <button class="menu__close-button">Закрыть</button>
-      </div>
-      <nav class="menu__navigation">
-        <ul class="menu__list">
-          <li class="menu__list-element"><a class="menu__link" href="../brands.html">Бренды</a></li>
-          <li class="menu__list-element"><a class="menu__link" href="../../categorys/categorys.html">Категории</a></li>
-        </ul>
-        <ul class="menu__list">
-          <li class="menu__list-element"><a class="menu__link" href="../../log_in/log_in.html">Войти</a></li>
-          <li class="menu__list-element"><a class="menu__link" href="../../wishes/wishes.html">Желания</a></li>
-          <li class="menu__list-element"><a class="menu__link" href="../../cart/cart.html">Корзина(2)</a></li>
-        </ul>
-        <ul class="menu__list">
-          <li class="menu__list-element"><a class="menu__link" href="#">Подписаться</a></li>
-          <li class="menu__list-element"><a class="menu__link" href="#">О нас</a></li>
-        </ul>
-      </nav>
+  <div class="menu-popup menu-popup_hidden">
+    <div class="fake-header">
+      <a href="../../../index.html">
+        <div class="fake-logo"></div>
+      </a>
+      <button class="menu-close-button">Закрыть</button>
     </div>
+    <nav class="menu">
+      <ul class="menu-list">
+        <li class="menu-list-element"><a class="menu-link" href="../../brands/brands.html">Бренды</a></li>
+        <li class="menu-list-element"><a class="menu-link" href="../../categorys/categorys.html">Категории</a></li>
+      </ul>
+      <ul class="menu-list">
+        <li class="menu-list-element"><a class="menu-link" href="../../log_in/log_in.html">Войти</a></li>
+        <li class="menu-list-element"><a class="menu-link" href="../../wishes/wishes.html">Желания</a></li>
+        <li class="menu-list-element"><a class="menu-link" href="../../cart/cart.html">Корзина(2)</a></li>
+      </ul>
+      <ul class="menu-list">
+        <li class="menu-list-element"><a class="menu-link" href="#">Подписаться</a></li>
+        <li class="menu-list-element"><a class="menu-link" href="#">О нас</a></li>
+      </ul>
+    </nav>
   </div>
 
   <!-- ОСНОВНОЙ РАЗДЕЛ -->
-  <main class="brand">
+  <main class="main">
 
     <!-- о бренде -->
-    <section>
-      <h2 class="brand__name">Anna Maslovskaya</h2>
-      <p class="brand__description">I am Anna Maslovskaya. I was born in Siberia, I live and work in Moscow, I study a
+    <section class="about">
+      <h2 class="brand-name">Anna Maslovskaya</h2>
+      <p class="brand-description">I am Anna Maslovskaya. I was born in Siberia, I live and work in Moscow, I study a
         lot, practice and travel. spent her childhood at an art school. in her youth she unlearned to become a
         designer-constructor of clothes, then she began to write articles about fashion. in 2010, already in Moscow, I
         was
@@ -76,99 +74,99 @@
     <section class="cards">
 
       <div class="card_square">
-        <img class="card__image card__image_square" src="./images/moon.jpg" alt="Moon">
-        <div class="card__info">
-          <div class="card__title">
-            <h3 class="card__name">Moon</h3>
-            <span class="card__material">(Gold)</span>
+        <img class="card-image card-image_square" src="./images/moon.jpg" alt="Moon">
+        <div class="card-info">
+          <div class="card-title">
+            <h3 class="card-name">Moon</h3>
+            <span class="card-material">(Gold)</span>
           </div>
-          <span class="card__price">18 000(Rub)</span>
+          <span class="card-price">18 000(Rub)</span>
         </div>
-        <button class="card__like"></button>
+        <button class="card-like"></button>
       </div>
 
       <div class="card_vertical">
-        <img class="card__image card__image_vertical" src="./images/a.jpg" alt="A">
-        <div class="card__info">
-          <div class="card__title">
-            <h3 class="card__name">A</h3>
-            <span class="card__material">(Gold)</span>
+        <img class="card-image card-image_vertical" src="./images/a.jpg" alt="A">
+        <div class="card-info">
+          <div class="card-title">
+            <h3 class="card-name">A</h3>
+            <span class="card-aterial">(Gold)</span>
           </div>
-          <span class="card__price">18 000(Rub)</span>
+          <span class="card-price">18 000(Rub)</span>
         </div>
-        <button class="card__like"></button>
+        <button class="card-like"></button>
       </div>
 
       <div class="card_square">
-        <img class="card__image card__image_square" src="./images/base.jpg" alt="Base">
-        <div class="card__info">
-          <div class="card__title">
-            <h3 class="card__name">Base</h3>
-            <span class="card__material">(Silver/Diamond)</span>
+        <img class="card-image card-image_square" src="./images/base.jpg" alt="Base">
+        <div class="card-info">
+          <div class="card-title">
+            <h3 class="card-name">Base</h3>
+            <span class="card-material">(Silver/Diamond)</span>
           </div>
-          <span class="card__price">30 00000(Rub)</span>
+          <span class="card-price">30 00000(Rub)</span>
         </div>
-        <button class="card__like"></button>
+        <button class="card-like"></button>
       </div>
 
       <div class="card_horizontal">
-        <img class="card__image card__image_horizontal" src="./images/wave.jpg" alt="Wave">
-        <div class="card__info">
-          <div class="card__title">
-            <h3 class="card__name">Wave</h3>
-            <span class="card__material">(Gold)</span>
+        <img class="card-image card-image_horizontal" src="./images/wave.jpg" alt="Wave">
+        <div class="card-info">
+          <div class="card-title">
+            <h3 class="card-name">Wave</h3>
+            <span class="card-material">(Gold)</span>
           </div>
-          <span class="card__price">15 000(Rub)</span>
+          <span class="card-price">15 000(Rub)</span>
         </div>
-        <button class="card__like"></button>
+        <button class="card-like"></button>
       </div>
 
       <div class="card_vertical">
-        <img class="card__image card__image_vertical" src="./images/opal.jpg" alt="Opal">
-        <div class="card__info">
-          <div class="card__title">
-            <h3 class="card__name">Opal</h3>
-            <span class="card__material">(Gold)</span>
+        <img class="card-image card-image_vertical" src="./images/opal.jpg" alt="Opal">
+        <div class="card-info">
+          <div class="card-title">
+            <h3 class="card-name">Opal</h3>
+            <span class="card-material">(Gold)</span>
           </div>
-          <span class="card__price">30 00000(Rub)</span>
+          <span class="card-price">30 00000(Rub)</span>
         </div>
-        <button class="card__like"></button>
+        <button class="card-like"></button>
       </div>
 
       <div class="card_square">
-        <img class="card__image card__image_square" src="./images/prayer.jpg" alt="Prayer">
-        <div class="card__info">
-          <div class="card__title">
-            <h3 class="card__name">Prayer</h3>
-            <span class="card__material">(Silver)</span>
+        <img class="card-image card-image_square" src="./images/prayer.jpg" alt="Prayer">
+        <div class="card-info">
+          <div class="card-title">
+            <h3 class="card-name">Prayer</h3>
+            <span class="card-material">(Silver)</span>
           </div>
-          <span class="card__price">30 00000(Rub)</span>
+          <span class="card-price">30 00000(Rub)</span>
         </div>
-        <button class="card__like"></button>
+        <button class="card-like"></button>
       </div>
 
       <div class="card_square">
-        <img class="card__image card__image_square" src="./images/mounten.jpg" alt="Mounten">
-        <div class="card__info">
-          <div class="card__title">
-            <h3 class="card__name">Mounten</h3>
-            <span class="card__material">(Gold)</span>
+        <img class="card-image card-image_square" src="./images/mounten.jpg" alt="Mounten">
+        <div class="card-info">
+          <div class="card-title">
+            <h3 class="card-name">Mounten</h3>
+            <span class="card-material">(Gold)</span>
           </div>
-          <span class="card__price">30 00000(Rub)</span>
+          <span class="card-price">30 00000(Rub)</span>
         </div>
-        <button class="card__like"></button>
+        <button class="card-like"></button>
       </div>
 
       <div class="card_horizontal">
-        <img class="card__image card__image_horizontal" src="./images/crumped-leaf.jpg" alt="Crumped leaf">
-        <div class="card__info">
-          <div class="card__title">
-            <h3 class="card__name">Crumped leaf</h3>
-            <span class="card__material">(Gold/Silver)</span>
+        <img class="card-image card-image_horizontal" src="./images/crumped-leaf.jpg" alt="Crumped leaf">
+        <div class="card-info">
+          <div class="card-title">
+            <h3 class="card-name">Crumped leaf</h3>
+            <span class="card-material">(Gold/Silver)</span>
           </div>
-          <span class="card__price">15 000(Rub)</span>
+          <span class="card-price">15 000(Rub)</span>
         </div>
-        <button class="card__like"></button>
+        <button class="card-like"></button>
       </div>
 
     </section>
