@@ -8,68 +8,64 @@
   <link rel="stylesheet" href="./log_in.css" />
 </head>
 
-<body class="page">
+<body>
 
   <!-- ШАПКА -->
   <header class="header">
     <a href="../../index.html">
-      <div class="header__logo"></div>
+      <div class="logo"></div>
     </a>
-    <button class="header__menu-button">Меню</button>
+    <button class="menu-button">Меню</button>
   </header>
 
   <!-- МЕНЮ -->
-  <div class="menu menu_hidden">
-    <div class="menu__container">
-      <div class="menu__horizontal-alignment">
-        <a href="../../index.html">
-          <div class="menu__logo"></div>
-        </a>
-        <button class="menu__close-button">Закрыть</button>
-      </div>
-      <nav class="menu__navigation">
-        <ul class="menu__list">
-          <li class="menu__list-element"><a class="menu__link" href="../brands/brands.html">Бренды</a></li>
-          <li class="menu__list-element"><a class="menu__link" href="../categorys/categorys.html">Категории</a></li>
-        </ul>
-        <ul class="menu__list">
-          <li class="menu__list-element"><a class="menu__link" href="../log_in/log_in.html">Войти</a></li>
-          <li class="menu__list-element"><a class="menu__link" href="../wishes/wishes.html">Желания</a></li>
-          <li class="menu__list-element"><a class="menu__link" href="../cart/cart.html">Корзина(2)</a></li>
-        </ul>
-        <ul class="menu__list">
-          <li class="menu__list-element"><a class="menu__link" href="#">Подписаться</a></li>
-          <li class="menu__list-element"><a class="menu__link" href="#">О нас</a></li>
-        </ul>
-      </nav>
+  <div class="menu-popup menu-popup_hidden">
+    <div class="fake-header">
+      <a href="../../index.html">
+        <div class="fake-logo"></div>
+      </a>
+      <button class="menu-close-button">Закрыть</button>
     </div>
+    <nav class="menu">
+      <ul class="menu-list">
+        <li class="menu-list-element"><a class="menu-link" href="../brands/brands.html">Бренды</a></li>
+        <li class="menu-list-element"><a class="menu-link" href="../categorys/categorys.html">Категории</a></li>
+      </ul>
+      <ul class="menu-list">
+        <li class="menu-list-element"><a class="menu-link" href="../log_in/log_in.html">Войти</a></li>
+        <li class="menu-list-element"><a class="menu-link" href="../wishes/wishes.html">Желания</a></li>
+        <li class="menu-list-element"><a class="menu-link" href="../cart/cart.html">Корзина(2)</a></li>
+      </ul>
+      <ul class="menu-list">
+        <li class="menu-list-element"><a class="menu-link" href="#">Подписаться</a></li>
+        <li class="menu-list-element"><a class="menu-link" href="#">О нас</a></li>
+      </ul>
+    </nav>
   </div>
 
-  <!-- ОСНОВНОЙ РАЗДЕЛ -->
-  <main class="authorization">
-    <h2 class="authorization__heading">Log in</h2>
-    <form class="authorization__form">
+  <!-- ФОРМА АВТОРИЗАЦИИ -->
+  <main class="main">
+    <h2 class="page-heading">Вход</h2>
+    <form class="form">
 
-      <!-- e-mail -->
-      <div class="authorization__alignment">
-        <p class="authorization__type">Your E-mail:</p>
-        <input class="authorization__input" type="email" required placeholder="E-mail">
-        <span class="authorization__error">Введённый текст не является адресом электронной почты. Пожалуйста, введите
-          корректный адрес.</span>
+      <!-- инпут: E-mail -->
+      <div class="input-align">
+        <h3 class="input-name">Ваш E-mail:</h3>
+        <input class="input" type="email" required placeholder="E-mail">
+        <span class="input-error">E-mail указан неверно</span>
       </div>
 
-      <!-- пароль -->
-      <div class="authorization__alignment">
-        <p class="authorization__type">Password:</p>
-        <input class="authorization__input" type="password" required placeholder="********">
-        <span class="authorization__error">Пароль не верный. Пожалуйста, убедитесь в правильности регистра и введите
-          пароль заново.</span>
+      <!-- инпут: пароль -->
+      <div class="input-align">
+        <h3 class="input-name">Пароль:</h3>
+        <input class="input" type="password" required placeholder="******">
+        <span class="input-error">Пароль указан неверно</span>
       </div>
 
       <!-- кнопки -->
-      <div class="authorization__buttons">
-        <button class="authorization__button authorization__button_black" type="submit">Log in</button>
-        <a class="authorization__button authorization__button_white" href="../sign_in/sign_in.html">Sign in</a>
+      <div class="buttons-align">
+        <button class="button-black">Вход</button>
+        <a href="../sign_in/sign_in.html" class="button-white">Регистрация</a>
       </div>
 
     </form>

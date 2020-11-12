@@ -8,105 +8,97 @@
   <link rel="stylesheet" href="./sign_in.css" />
 </head>
 
-<body class="page">
+<body>
 
   <!-- ШАПКА -->
   <header class="header">
     <a href="../../index.html">
-      <div class="header__logo"></div>
+      <div class="logo"></div>
     </a>
-    <button class="header__menu-button">Меню</button>
+    <button class="menu-button">Меню</button>
   </header>
 
   <!-- МЕНЮ -->
-  <div class="menu menu_hidden">
-    <div class="menu__container">
-      <div class="menu__horizontal-alignment">
-        <a href="../../index.html">
-          <div class="menu__logo"></div>
-        </a>
-        <button class="menu__close-button">Закрыть</button>
-      </div>
-      <nav class="menu__navigation">
-        <ul class="menu__list">
-          <li class="menu__list-element"><a class="menu__link" href="../brands/brands.html">Бренды</a></li>
-          <li class="menu__list-element"><a class="menu__link" href="../categorys/categorys.html">Категории</a></li>
-        </ul>
-        <ul class="menu__list">
-          <li class="menu__list-element"><a class="menu__link" href="../log_in/log_in.html">Войти</a></li>
-          <li class="menu__list-element"><a class="menu__link" href="../wishes/wishes.html">Желания</a></li>
-          <li class="menu__list-element"><a class="menu__link" href="../cart/cart.html">Корзина(2)</a></li>
-        </ul>
-        <ul class="menu__list">
-          <li class="menu__list-element"><a class="menu__link" href="#">Подписаться</a></li>
-          <li class="menu__list-element"><a class="menu__link" href="#">О нас</a></li>
-        </ul>
-      </nav>
+  <div class="menu-popup menu-popup_hidden">
+    <div class="fake-header">
+      <a href="../../index.html">
+        <div class="fake-logo"></div>
+      </a>
+      <button class="menu-close-button">Закрыть</button>
     </div>
+    <nav class="menu">
+      <ul class="menu-list">
+        <li class="menu-list-element"><a class="menu-link" href="../brands/brands.html">Бренды</a></li>
+        <li class="menu-list-element"><a class="menu-link" href="../categorys/categorys.html">Категории</a></li>
+      </ul>
+      <ul class="menu-list">
+        <li class="menu-list-element"><a class="menu-link" href="../log_in/log_in.html">Войти</a></li>
+        <li class="menu-list-element"><a class="menu-link" href="../wishes/wishes.html">Желания</a></li>
+        <li class="menu-list-element"><a class="menu-link" href="../cart/cart.html">Корзина(2)</a></li>
+      </ul>
+      <ul class="menu-list">
+        <li class="menu-list-element"><a class="menu-link" href="#">Подписаться</a></li>
+        <li class="menu-list-element"><a class="menu-link" href="#">О нас</a></li>
+      </ul>
+    </nav>
   </div>
 
-  <!-- ОСНОВНОЙ РАЗДЕЛ -->
-  <main class="authorization">
-    <h2 class="authorization__heading">Регистрация</h2>
-    <form class="authorization__form">
+  <!-- ФОРМА АВТОРИЗАЦИИ -->
+  <main class="main">
+    <h2 class="page-heading">Регистрация</h2>
+    <form class="form">
 
-      <!-- e-mail -->
-      <div class="authorization__alignment">
-        <p class="authorization__type">Ваш E-mail:</p>
-        <input class="authorization__input" type="email" required placeholder="E-mail">
-        <span class="authorization__error">Такой E-mail уже зарегистрирован</span>
+      <!-- инпут: E-mail -->
+      <div class="input-align">
+        <h3 class="input-name">Ваш E-mail:</h3>
+        <input class="input" type="email" required placeholder="E-mail">
+        <span class="input-error">E-mail указан неверно</span>
       </div>
 
-      <!-- пароль -->
-      <div class="authorization__alignment">
-        <p class="authorization__type">Придумайте пароль:</p>
-        <input class="authorization__input" type="password" required placeholder="********">
-        <span class="authorization__error">Пароль слишком короткий</span>
+      <!-- инпут: пароль -->
+      <div class="input-align">
+        <h3 class="input-name">Придумайте пароль:</h3>
+        <input class="input" type="password" required placeholder="******">
+        <span class="input-error">Слишком короткий пароль</span>
       </div>
 
-      <!-- пароль ещё раз -->
-      <div class="authorization__alignment">
-        <p class="authorization__type">Повторите пароль:</p>
-        <input class="authorization__input" type="password" required placeholder="********">
-        <span class="authorization__error">Пароли не совпадают</span>
+      <!-- инпут: повтор пароля -->
+      <div class="input-align">
+        <h3 class="input-name">Повторите пароль:</h3>
+        <input class="input" type="password" required placeholder="******">
+        <span class="input-error">Пароли не совпадают</span>
       </div>
 
-      <div class="authorization__checkboxes">
-        <!-- чекбокс: подписка на обновления -->
-        <label class="authorization__label">
-          <div>
-            <input class="authorization__ckeckbox-true" type="checkbox" checked>
-            <span class="authorization__ckeckbox-fake"></span>
-          </div>
-          <div class="authorization__ckeckbox-caption">
-            <span class="authorization__ckeckbox-text">I would like to receive information about new collections and
-              special offers by the specified email</span>
-          </div>
-        </label>
+      <!-- чекбокс: подписка на обновления -->
+      <label class="label">
+        <div>
+          <input class="true-checkbox" type="checkbox" checked>
+          <div class="fake-checkbox"></div>
+        </div>
+        <p class="checkbox-description">I would like to receive information about new collections and
+          special offers by the specified email</p>
+      </label>
 
-        <!-- чекбокс: согласие с правилами -->
-        <label class="authorization__label">
-          <div>
-            <input class="authorization__ckeckbox-true" type="checkbox">
-            <span class="authorization__ckeckbox-fake"></span>
-          </div>
-          <div class="authorization__ckeckbox-caption">
-            <span class="authorization__ckeckbox-text">By clicking the "Checkout" button you consent to the processing
-              of your personal data</span>
-          </div>
-        </label>
-      </div>
+      <!-- чекбокс: согласие с правилами -->
+      <label class="label">
+        <div>
+          <input class="true-checkbox" type="checkbox">
+          <div class="fake-checkbox"></div>
+        </div>
+        <p class="checkbox-description">By clicking the "Checkout" button you consent to the processing of your personal
+          data</p>
+      </label>
 
       <!-- кнопки -->
-      <div class="authorization__buttons">
-        <button class="authorization__button authorization__button_black" type="submit">Регистрация</button>
-        <a class="authorization__button authorization__button_white" href="../log_in/log_in.html">Вход</a>
+      <div class="buttons-align">
+        <button class="button-black">Регистрация</button>
+        <a href="../log_in/log_in.html" class="button-white">Вход</a>
       </div>
 
     </form>
   </main>
 
-  <script src="./sign_in.js"></script>
+  <script src="./log_in.js"></script>
 
 </body>
 
