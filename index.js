@@ -80,9 +80,19 @@ const myFullpage = new fullpage('#fullpage', {
 
 
 // МЕНЮ
-const menu = document.querySelector('.menu');
-const menuButton = document.querySelector('.header__menu-button');
-const closeMenuButton = document.querySelector('.menu__close-button');
-const toggleMenu = () => menu.classList.toggle('menu_hidden');
+const menu = document.querySelector('.menu-popup');
+const header = document.querySelector('.header');
+const main = document.querySelector('.main');
+const footer = document.querySelector('.footer');
+const menuButton = document.querySelector('.menu-button');
+const closeButton = document.querySelector('.menu-close-button');
+
+const toggleMenu = () => {
+  menu.classList.toggle('menu-popup_hidden');
+  header.classList.toggle('header_hidden');
+	main.classList.toggle('main_hidden');
+	footer.classList.toggle('footer_hidden');
+}
+
 menuButton.addEventListener('click', toggleMenu);
-closeMenuButton.addEventListener('click', toggleMenu);
+closeButton.addEventListener('click', toggleMenu);
