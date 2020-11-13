@@ -47,7 +47,7 @@ body {
 .logo {
   width: 105px;
   height: 31px;
-  background-image: url(../../../images/logo-black.png);
+  background-image: url(../../images/logo-black.png);
   background-size: cover;
 }
 
@@ -89,7 +89,7 @@ body {
 .fake-logo {
   width: 105px;
   height: 31px;
-  background-image: url(../../../images/logo-black.png);
+  background-image: url(../../images/logo-black.png);
   background-size: cover;
 }
 
@@ -275,7 +275,7 @@ screen and (max-height: 580px) {
   height: 16px;
   border: none;
   outline: none;
-  background-image: url(../../../images/like.svg);
+  background-image: url(../../images/like.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
