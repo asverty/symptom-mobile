@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0">
+  <title>Корзина | Магазин "SYMPTOM"</title>
+  <link rel="stylesheet" href="./cart.css" />
+</head>
+
+<body>
+
+  <!-- ШАПКА -->
+  <header class="header">
+    <a href="../../index.html">
+      <div class="logo"></div>
+    </a>
+    <button class="menu-button">Меню</button>
+  </header>
+
+  <!-- МЕНЮ -->
+  <div class="menu-popup menu-popup_hidden">
+    <div class="fake-header">
+      <a href="../../index.html">
+        <div class="fake-logo"></div>
+      </a>
+      <button class="menu-close-button">Закрыть</button>
+    </div>
+    <nav class="menu">
+      <ul class="menu-list">
+        <li class="menu-list-element"><a class="menu-link" href="../brands/brands.html">Бренды</a></li>
+        <li class="menu-list-element"><a class="menu-link" href="../categorys/categorys.html">Категории</a></li>
+      </ul>
+      <ul class="menu-list">
+        <li class="menu-list-element"><a class="menu-link" href="../log_in/log_in.html">Войти</a></li>
+        <li class="menu-list-element"><a class="menu-link" href="../wishes/wishes.html">Желания</a></li>
+        <li class="menu-list-element"><a class="menu-link" href="../cart/cart.html">Корзина(2)</a></li>
+      </ul>
+      <ul class="menu-list">
+        <li class="menu-list-element"><a class="menu-link" href="#">Подписаться</a></li>
+        <li class="menu-list-element"><a class="menu-link" href="#">О нас</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- КОРЗИНА -->
+  <main class="main">
+    <h2 class="page-heading">1 item</h2>
+    <div class="items">
+      <div class="item">
+        <div class="item-align">
+          <div class="item-info">
+            <span class="item-brand">Anna Maslovskaya</span>
+            <span class="item-name">Prayer</span>
+            <span class="item-material">Material: Gold</span>
+            <span class="item-size">Size: 7.5</span>
+          </div>
+          <div class="item-buttons">
+            <button class="edit-button">Edit</button>
+            <button class="remove-button"></button>
+          </div>
+        </div>
+        <img class="item-image" src="../brands/anna_maslovskaya/images/prayer-gold.jpg" alt="Prayer">
+        <span class="item-price">19000 Rub.</span>
+      </div>
+    </div>
+    <div class="order">
+      <span class="total">Total: 30 0000(RUB)</span>
+      <button class="buy-button">Order</button>
+    </div>
+  </main>
+
+  <script src="./cart.js"></script>
+
+</body>
+
+</html>
