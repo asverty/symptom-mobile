@@ -1,0 +1,210 @@
+@font-face {
+  font-family: "Nimbus Sans";
+  src: url("../../vendor/fonts/Nimbus/NimbusSanL-Reg.ttf") format("truetype"),
+  url("../../vendor/fonts/Nimbus/NimbusSanL-Reg.woff") format("woff"),
+  url("../../vendor/fonts/Nimbus/NimbusSanL-Reg.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nimbus Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #FAFAFA;
+}
+
+
+
+/* ШАПКА */
+.header {
+  padding-top: 7vh;
+  padding-bottom: 2vh;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.header_hidden {
+  display: none;
+}
+
+.logo {
+  width: 105px;
+  height: 31px;
+  background-image: url(../../images/logo-black.png);
+  background-size: cover;
+}
+
+.menu-button {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+
+
+/* МЕНЮ */
+.menu-popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+}
+
+.menu-popup_hidden {
+  display: none;
+}
+
+.fake-header {
+  padding-top: 7vh;
+  padding-bottom: 2vh;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.fake-logo {
+  width: 105px;
+  height: 31px;
+  background-image: url(../../images/logo-black.png);
+  background-size: cover;
+}
+
+.menu-close-button {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.menu {
+  padding-top: 12px;
+  padding-right: 4vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.menu-list {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+.menu-list:first-of-type {
+  margin-top: 0px;
+}
+
+.menu-list:last-of-type {
+  margin-bottom: 0px;
+}
+
+.menu-list-element {
+  margin-bottom: 10px;
+}
+
+.menu-list-element:last-of-type {
+  margin-bottom: 0;
+}
+
+.menu-link {
+  font-size: 3.6rem;
+  line-height: 1.2;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media 
+screen and (max-width: 359px), 
+screen and (max-height: 580px) {
+  .menu-list {
+    margin-bottom: 0;
+  }
+
+  .menu-list-element {
+    margin-bottom: 4px;
+  }
+
+  .menu-link {
+    font-size: 2.8rem;
+  }
+}
+
+
+
+/* О НАС */
+.main {
+  padding-bottom: 10vh;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.main_hidden {
+  display: none;
+}
+
+.page-heading {
+  margin-bottom: 20px;
+  font-size: 3.6rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.contact {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-type {
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+.contact-data {
+  font-size: 3.6rem;
+  line-height: 1.2;
+}
+
+.registered {
+  margin-top: auto;
+  margin-bottom: -40px;
+  font-size: 1.4rem;
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 374px) {
+  .contact-data {
+    font-size: 2.8rem;
+  }
+}
