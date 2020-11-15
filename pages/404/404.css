@@ -24,7 +24,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: #FAFAFA;
 }
 
 
@@ -183,4 +183,5 @@ screen and (max-height: 580px) {
 .error-404-text {
   font-size: 1.8rem;
   line-height: 1.2;
+  text-transform: uppercase;
 }

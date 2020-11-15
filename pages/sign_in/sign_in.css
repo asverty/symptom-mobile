@@ -24,7 +24,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: #FAFAFA;
 }
 
 
@@ -276,7 +276,7 @@ screen and (max-height: 580px) {
   height: 55px;
   font-size: 1.8rem;
   line-height: 1.2;
-  color: white;
+  color: #FAFAFA;
   border: none;
   border-radius: 41px;
   background-color: black;
@@ -291,7 +291,7 @@ screen and (max-height: 580px) {
   text-decoration: none;
   border: solid 1px black;
   border-radius: 41px;
-  background-color: white;
+  background-color: #FAFAFA;
   box-sizing: border-box;
   display: flex;
   justify-content: center;

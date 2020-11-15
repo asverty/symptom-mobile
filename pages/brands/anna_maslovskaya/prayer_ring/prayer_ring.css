@@ -24,7 +24,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color:  #FAFAFA;
+  background-color: #FAFAFA;
 }
 
 
@@ -47,7 +47,7 @@ body {
 .logo {
   width: 105px;
   height: 31px;
-  background-image: url(../../images/logo-black.png);
+  background-image: url(../../../../images/logo-black.png);
   background-size: cover;
 }
 
@@ -89,7 +89,7 @@ body {
 .fake-logo {
   width: 105px;
   height: 31px;
-  background-image: url(../../images/logo-black.png);
+  background-image: url(../../../../images/logo-black.png);
   background-size: cover;
 }
 
@@ -159,9 +159,9 @@ screen and (max-height: 580px) {
 
 
 
-/* КОРЗИНА */
+/* ИЗДЕЛИЕ */
 .main {
-  padding-bottom: 6vh;
+  padding-bottom: 10vh;
   padding-left: 4vw;
   padding-right: 4vw;
   display: flex;
@@ -173,99 +173,188 @@ screen and (max-height: 580px) {
   display: none;
 }
 
-.page-heading {
-  margin-bottom: 20px;
-  font-size: 3.6rem;
-  line-height: 1.2;
-  text-transform: uppercase;
-}
-
-.items {
-  width: 100%;
-}
-
 .item {
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-}
-
-.item-align {
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.item-info {
+  margin-bottom: 40px;
   display: flex;
   flex-direction: column;
 }
 
 .item-brand {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 1.2;
   text-transform: uppercase;
 }
 
 .item-name {
-  font-size: 1.8rem;
+  margin-top: 20px;
+  font-size: 3.6rem;
   line-height: 1.2;
-  text-transform: uppercase;
 }
 
-.item-material {
-  font-size: 1.8rem;
-  line-height: 1.2;
-  text-transform: uppercase;
+.item-image {
+  margin-top: 8px;
+  max-width: 92vw;
+  max-height: 92vw;
+  object-fit: contain;
 }
 
-.item-size {
-  font-size: 1.8rem;
+.item-description {
+  font-size: 1.4rem;
   line-height: 1.2;
-  text-transform: uppercase;
 }
 
-.item-buttons {
+.material {
+  margin-bottom: 40px;
   display: flex;
+  flex-direction: column;
 }
 
-.edit-button {
-  margin-right: 20px;
-  width: 67px;
-  height: 28px;
+.material-heading {
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.materials {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.material-gold {
+  margin-bottom: 10px;
+  margin-right: 10px;
+  width: 95px;
+  height: 47px;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  border-radius: 36px;
+  background-color: #F2C94C;
+}
+
+.material-silver {
+  margin-bottom: 10px;
+  margin-right: 10px;
+  width: 95px;
+  height: 47px;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  border-radius: 36px;
+  background-color: #BDBDBD;
+}
+
+.material-gold:last-of-type, 
+.material-silver:last-of-type {
+  margin-right: 0;
+}
+
+.size {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.size-heading {
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.size-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(48px, 1fr));
+  grid-gap: 20px;
+}
+
+.label {
+  width: 48px;
+  height: 48px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.true-radio {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.fake-radio {
+  position: relative;
+  display: flex;
+  width: 48px;
+  height: 48px;
+  background-image: url(../../../../images/radio-cirlce.svg);
+  background-position: center;
+  background-size: cover;
+}
+
+.fake-radio::before {
+  position: absolute;
+  display: flex;
+  content: "";
+  width: 48px;
+  height: 48px;
+  background-image: url(../../../../images/radio-cross.svg);
+  background-position: center;
+  background-size: cover;
+  opacity: 0;
+}
+
+.true-radio:checked + 
+.fake-radio::before {
+  opacity: 1;
+}
+
+.radio-size {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-size {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-size-heading {
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.custom-size-text {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+.custom-size-button {
+  width: 181px;
+  height: 55px;
   font-size: 1.8rem;
   line-height: 1.2;
   border: 1px solid black;
   border-radius: 41px;
-  box-sizing: border-box;
   outline: none;
-  background-color:  #FAFAFA;
-}
-
-.remove-button {
-  width: 28px;
-  height: 28px;
-  border: 1px solid black;
-  border-radius: 50%;
-  box-sizing: border-box;
-  outline: none;
-  background-color:  #FAFAFA;
-  background-image: url(../../images/x.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.item-image {
-  width: 210px;
-  height: 193px;
-  box-sizing: border-box;
-  align-self: center;
-}
-
-.item-price {
-  margin-top: 20px;
-  font-size: 3.6rem;
-  line-height: 1.2;
+  background-color: FAFAFA;
 }
 
 .order {
@@ -274,8 +363,7 @@ screen and (max-height: 580px) {
   flex-direction: column;
 }
 
-.total {
-  margin-top: 38px; 
+.price {
   margin-bottom: 16px;
   font-size: 3.6rem;
   line-height: 1.2;
@@ -291,34 +379,4 @@ screen and (max-height: 580px) {
   border-radius: 41px;
   outline: none;
   background-color: black;
-}
-
-@media screen and (max-width: 374px) { 
-  .page-heading {
-    font-size: 2.8rem;
-  }
-
-  .item-brand {
-    font-size: 1.4rem;
-  }
-  
-  .item-name {
-    font-size: 1.4rem;
-  }
-  
-  .item-material {
-    font-size: 1.4rem;
-  }
-  
-  .item-size {
-    font-size: 1.4rem;
-  }
-
-  .item-price {
-    font-size: 2.8rem;
-  }
-
-  .total {
-    font-size: 2.8rem;
-  }
 }

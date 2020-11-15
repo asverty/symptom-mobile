@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0">
+  <title>Заказ | Магазин "SYMPTOM"</title>
+  <link rel="stylesheet" href="./order.css" />
+</head>
+
+<body>
+
+  <!-- ШАПКА -->
+  <header class="header">
+    <a href="../../index.html">
+      <div class="logo"></div>
+    </a>
+    <button class="menu-button">Меню</button>
+  </header>
+
+  <!-- МЕНЮ -->
+  <div class="menu-popup menu-popup_hidden">
+    <div class="fake-header">
+      <a href="../../index.html">
+        <div class="fake-logo"></div>
+      </a>
+      <button class="menu-close-button">Закрыть</button>
+    </div>
+    <nav class="menu">
+      <ul class="menu-list">
+        <li class="menu-list-element"><a class="menu-link" href="../brands/brands.html">Бренды</a></li>
+        <li class="menu-list-element"><a class="menu-link" href="../categorys/categorys.html">Категории</a></li>
+      </ul>
+      <ul class="menu-list">
+        <li class="menu-list-element"><a class="menu-link" href="../log_in/log_in.html">Войти</a></li>
+        <li class="menu-list-element"><a class="menu-link" href="../wishes/wishes.html">Желания</a></li>
+        <li class="menu-list-element"><a class="menu-link" href="../cart/cart.html">Корзина(2)</a></li>
+      </ul>
+      <ul class="menu-list">
+        <li class="menu-list-element"><a class="menu-link" href="#">Подписаться</a></li>
+        <li class="menu-list-element"><a class="menu-link" href="#">О нас</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- ЗАКАЗ -->
+  <main class="main">
+
+    <button class="back-button">
+      <div class="button-arrow"></div><span class="button-text">Back</span>
+    </button>
+
+    <div class="delivery">
+      <span class="delivery-heading">Delivery method:</span>
+      <div class="delivery-methods">
+        <button id="method-russian" class="method method-selected">Russian post</button>
+        <button id="method-pickup" class="method">Pickup</button>
+        <button id="method-worldide" class="method">Worldwide</button>
+      </div>
+    </div>
+
+    <form class="form">
+
+      <!-- инпут: имя -->
+      <div class="input-align">
+        <h3 class="input-name">Name:</h3>
+        <input class="input" type="text" required placeholder="Name">
+        <span class="input-error">Поле обязательно для заполнения</span>
+      </div>
+
+      <!-- инпут: фамилия -->
+      <div class="input-align">
+        <h3 class="input-name">Last Name:</h3>
+        <input class="input" type="text" required placeholder="Last">
+        <span class="input-error">Поле обязательно для заполнения</span>
+      </div>
+
+      <!-- инпут: телефон -->
+      <div class="input-align">
+        <h3 class="input-name">Phone:</h3>
+        <input class="input" type="tel" required placeholder="+7">
+        <span class="input-error">Поле обязательно для заполнения</span>
+      </div>
+
+      <!-- инпут: город -->
+      <div class="input-align">
+        <h3 class="input-name">City:</h3>
+        <input class="input" type="text" required placeholder="CITY">
+        <span class="input-error">Поле обязательно для заполнения</span>
+      </div>
+
+      <!-- инпут: адрес -->
+      <div class="input-align">
+        <h3 class="input-name">Address:</h3>
+        <textarea class="input" required rows="3" placeholder="STREET 12, APT 10STREET 12, APT 10"></textarea>
+        <span class="input-error input-error_low">Поле обязательно для заполнения</span>
+      </div>
+
+      <!-- инпут: почтовый индекс -->
+      <div class="input-align">
+        <h3 class="input-name">Postal Code:</h3>
+        <input class="input" type="number" required placeholder="000000">
+        <span class="input-error">Поле обязательно для заполнения</span>
+      </div>
+
+      <!-- инпут: E-mail -->
+      <div class="input-align">
+        <h3 class="input-name">E-mail:</h3>
+        <input class="input" type="email" required placeholder="Symptom@mail.ru">
+        <span class="input-error">Поле обязательно для заполнения</span>
+      </div>
+
+      <!-- чекбокс: подписка на обновления -->
+      <label class="label">
+        <div>
+          <input class="true-checkbox" type="checkbox" checked>
+          <div class="fake-checkbox"></div>
+        </div>
+        <p class="checkbox-description">I would like to receive information about new collections and
+          special offers by the specified email</p>
+      </label>
+
+      <!-- чекбокс: согласие с правилами -->
+      <label class="label">
+        <div>
+          <input class="true-checkbox" type="checkbox" checked>
+          <div class="fake-checkbox"></div>
+        </div>
+        <p class="checkbox-description">By clicking the "Checkout" button you consent to the processing of your personal
+          data</p>
+      </label>
+
+      <div class="order">
+        <span class="total">Total: 30 0000(RUB)</span>
+        <button class="buy-button">Order</button>
+      </div>
+
+    </form>
+
+  </main>
+
+  <script src="./order.js"></script>
+
+</body>
+
+</html>

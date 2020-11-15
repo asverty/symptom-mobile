@@ -24,7 +24,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color:  #FAFAFA;
+  background-color: #FAFAFA;
 }
 
 
@@ -159,9 +159,9 @@ screen and (max-height: 580px) {
 
 
 
-/* КОРЗИНА */
+/* О НАС */
 .main {
-  padding-bottom: 6vh;
+  padding-bottom: 10vh;
   padding-left: 4vw;
   padding-right: 4vw;
   display: flex;
@@ -180,145 +180,7 @@ screen and (max-height: 580px) {
   text-transform: uppercase;
 }
 
-.items {
-  width: 100%;
-}
-
-.item {
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-}
-
-.item-align {
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.item-info {
-  display: flex;
-  flex-direction: column;
-}
-
-.item-brand {
-  font-size: 1.8rem;
+.page-description {
+  font-size: 1.4rem;
   line-height: 1.2;
-  text-transform: uppercase;
-}
-
-.item-name {
-  font-size: 1.8rem;
-  line-height: 1.2;
-  text-transform: uppercase;
-}
-
-.item-material {
-  font-size: 1.8rem;
-  line-height: 1.2;
-  text-transform: uppercase;
-}
-
-.item-size {
-  font-size: 1.8rem;
-  line-height: 1.2;
-  text-transform: uppercase;
-}
-
-.item-buttons {
-  display: flex;
-}
-
-.edit-button {
-  margin-right: 20px;
-  width: 67px;
-  height: 28px;
-  font-size: 1.8rem;
-  line-height: 1.2;
-  border: 1px solid black;
-  border-radius: 41px;
-  box-sizing: border-box;
-  outline: none;
-  background-color:  #FAFAFA;
-}
-
-.remove-button {
-  width: 28px;
-  height: 28px;
-  border: 1px solid black;
-  border-radius: 50%;
-  box-sizing: border-box;
-  outline: none;
-  background-color:  #FAFAFA;
-  background-image: url(../../images/x.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.item-image {
-  width: 210px;
-  height: 193px;
-  box-sizing: border-box;
-  align-self: center;
-}
-
-.item-price {
-  margin-top: 20px;
-  font-size: 3.6rem;
-  line-height: 1.2;
-}
-
-.order {
-  margin-top: auto;
-  display: flex;
-  flex-direction: column;
-}
-
-.total {
-  margin-top: 38px; 
-  margin-bottom: 16px;
-  font-size: 3.6rem;
-  line-height: 1.2;
-}
-
-.buy-button {
-  width: 171px;
-  height: 55px;
-  font-size: 1.8rem;
-  line-height: 1.2;
-  color: white;
-  border: none;
-  border-radius: 41px;
-  outline: none;
-  background-color: black;
-}
-
-@media screen and (max-width: 374px) { 
-  .page-heading {
-    font-size: 2.8rem;
-  }
-
-  .item-brand {
-    font-size: 1.4rem;
-  }
-  
-  .item-name {
-    font-size: 1.4rem;
-  }
-  
-  .item-material {
-    font-size: 1.4rem;
-  }
-  
-  .item-size {
-    font-size: 1.4rem;
-  }
-
-  .item-price {
-    font-size: 2.8rem;
-  }
-
-  .total {
-    font-size: 2.8rem;
-  }
 }

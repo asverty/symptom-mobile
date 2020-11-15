@@ -24,7 +24,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color:  #FAFAFA;
+  background-color: #FAFAFA;
 }
 
 
@@ -159,9 +159,9 @@ screen and (max-height: 580px) {
 
 
 
-/* КОРЗИНА */
+/* ЗАКАЗ */
 .main {
-  padding-bottom: 6vh;
+  padding-bottom: 10vh;
   padding-left: 4vw;
   padding-right: 4vw;
   display: flex;
@@ -173,109 +173,181 @@ screen and (max-height: 580px) {
   display: none;
 }
 
-.page-heading {
-  margin-bottom: 20px;
-  font-size: 3.6rem;
-  line-height: 1.2;
-  text-transform: uppercase;
-}
-
-.items {
-  width: 100%;
-}
-
-.item {
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-}
-
-.item-align {
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.item-info {
-  display: flex;
-  flex-direction: column;
-}
-
-.item-brand {
-  font-size: 1.8rem;
-  line-height: 1.2;
-  text-transform: uppercase;
-}
-
-.item-name {
-  font-size: 1.8rem;
-  line-height: 1.2;
-  text-transform: uppercase;
-}
-
-.item-material {
-  font-size: 1.8rem;
-  line-height: 1.2;
-  text-transform: uppercase;
-}
-
-.item-size {
-  font-size: 1.8rem;
-  line-height: 1.2;
-  text-transform: uppercase;
-}
-
-.item-buttons {
-  display: flex;
-}
-
-.edit-button {
-  margin-right: 20px;
-  width: 67px;
+.back-button {
+  position: relative;
+  margin-top: 5px;
+  margin-bottom: 40px;
+  margin-left: 5px;
+  width: 90px;
   height: 28px;
-  font-size: 1.8rem;
-  line-height: 1.2;
   border: 1px solid black;
   border-radius: 41px;
   box-sizing: border-box;
   outline: none;
-  background-color:  #FAFAFA;
+  background-color: #FAFAFA;
 }
 
-.remove-button {
-  width: 28px;
-  height: 28px;
-  border: 1px solid black;
-  border-radius: 50%;
-  box-sizing: border-box;
-  outline: none;
-  background-color:  #FAFAFA;
-  background-image: url(../../images/x.svg);
+.button-arrow {
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  width: 8px;
+  height: 16px;
+  background-image: url(../../images/button-arrow.svg);
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.item-image {
-  width: 210px;
-  height: 193px;
-  box-sizing: border-box;
-  align-self: center;
+.button-text {
+  position: absolute;
+  top: 2px;
+  left: 30px;
+  font-size: 1.8rem;
+  line-height: 1.2;
 }
 
-.item-price {
-  margin-top: 20px;
+.delivery {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.delivery-heading {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.delivery-methods {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(167px, 1fr));
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
+}
+
+.method {
+  width: 167px;
+  height: 28px;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  background: #FAFAFA;
+  border: 1px solid black;
+  border-radius: 41px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.method-selected {
+  color: white;
+  background: black;
+  border: none;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.input-align {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.input-name {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.input {
   font-size: 3.6rem;
+  line-height: 1.2;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+textarea {
+  resize: none;
+}
+
+.input::placeholder {
+  color: #bdbdbd;
+}
+
+.input-error {
+  display: none;
+  position: absolute;
+  top: 66px;
+  font-size: 1em;
+  line-height: 1.2;
+  color: #EB5757;
+}
+
+.input-error_low {
+  top: 152px;
+}
+
+.label {
+  position: relative;
+  margin-bottom: 40px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.true-checkbox {
+  position: absolute; 
+  opacity: 0;
+}
+
+.fake-checkbox {
+  position: relative;
+  display: flex;
+  width: 24px;
+  height: 24px;
+  background-image: url(../../images/checkbox-circle.svg);
+  background-position: center;
+  background-size: cover;
+}
+
+.fake-checkbox::before {
+  position: absolute;
+  display: flex;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-image: url(../../images/checkbox-cross.svg);
+  background-position: center;
+  background-size: cover;
+  opacity: 0;
+}
+
+.true-checkbox:checked + 
+.fake-checkbox::before {
+  opacity: 1;
+}
+
+.checkbox-description {
+  margin-left: 20px;
+  font-size: 1rem;
   line-height: 1.2;
 }
 
 .order {
   margin-top: auto;
+  margin-left: 10px;
   display: flex;
   flex-direction: column;
 }
 
 .total {
-  margin-top: 38px; 
   margin-bottom: 16px;
   font-size: 3.6rem;
   line-height: 1.2;
@@ -290,34 +362,10 @@ screen and (max-height: 580px) {
   border: none;
   border-radius: 41px;
   outline: none;
-  background-color: black;
+  background-color:#BDBDBD;
 }
 
-@media screen and (max-width: 374px) { 
-  .page-heading {
-    font-size: 2.8rem;
-  }
-
-  .item-brand {
-    font-size: 1.4rem;
-  }
-  
-  .item-name {
-    font-size: 1.4rem;
-  }
-  
-  .item-material {
-    font-size: 1.4rem;
-  }
-  
-  .item-size {
-    font-size: 1.4rem;
-  }
-
-  .item-price {
-    font-size: 2.8rem;
-  }
-
+@media screen and (max-width: 374px) {
   .total {
     font-size: 2.8rem;
   }
