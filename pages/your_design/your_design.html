@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0">
+  <title>Ваш дизайн | Магазин "SYMPTOM"</title>
+  <link rel="stylesheet" href="./your_design.css" />
+</head>
+
+<body>
+
+  <!-- ШАПКА -->
+  <header class="header">
+    <a href="../../index.html">
+      <div class="logo"></div>
+    </a>
+    <button class="menu-button">Меню</button>
+  </header>
+
+  <!-- МЕНЮ -->
+  <div class="menu-popup menu-popup_hidden">
+    <div class="fake-header">
+      <a href="../../index.html">
+        <div class="fake-logo"></div>
+      </a>
+      <button class="menu-close-button">Закрыть</button>
+    </div>
+    <nav class="menu">
+      <ul class="menu-list">
+        <li class="menu-list-element"><a class="menu-link" href="../brands/brands.html">Бренды</a></li>
+        <li class="menu-list-element"><a class="menu-link" href="../categorys/categorys.html">Категории</a></li>
+      </ul>
+      <ul class="menu-list">
+        <li class="menu-list-element"><a class="menu-link" href="../log_in/log_in.html">Войти</a></li>
+        <li class="menu-list-element"><a class="menu-link" href="../wishes/wishes.html">Желания</a></li>
+        <li class="menu-list-element"><a class="menu-link" href="../cart/cart.html">Корзина(2)</a></li>
+      </ul>
+      <ul class="menu-list">
+        <li class="menu-list-element"><a class="menu-link" href="#">Подписаться</a></li>
+        <li class="menu-list-element"><a class="menu-link" href="#">О нас</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- ВАШ ДИЗАЙН -->
+  <main class="main">
+    <h2 class="page-heading">Ваш дизайн</h2>
+    <p class="page-description">У нас вы можете заказать своё собственное украшение, которое будет создано по вашему
+      дизайну. Мы вместе согласуем техническое задание, ориентировочные сроки и стоимость изделия, а далее подпишем
+      договор на его создание. Мы поможем воплотить в реальность любую вашу идею — украшение может быть из серебра или
+      золота, с применением драгоценных и полудрагоценных камней, с гравировкой или с использованием эмали. Стоимость
+      изделия зависит от сложности работы, а также от стоимости выбранных металлов и драгоценных и полудрагоценных
+      камней, но что невозможно подсчитать в деньгах — это радость от украшения, которое будет только у вас или у того
+      человека, которому вы его подарите.</p>
+
+    <form class="form" method="post" enctype="multipart/form-data">
+
+      <!-- инпут: E-mail -->
+      <div class="input-align">
+        <h3 class="input-name">Ваш E-mail:</h3>
+        <input class="input" type="email" placeholder="E-mail">
+        <span class="input-error">Поле обязательно для заполнения</span>
+      </div>
+
+      <!-- инпут: телефон -->
+      <div class="input-align">
+        <h3 class="input-name">Ваш номер:</h3>
+        <input class="input" type="tel" placeholder="+7">
+        <span class="input-error">Поле обязательно для заполнения</span>
+      </div>
+
+      <!-- инпут: имя -->
+      <div class="input-align">
+        <h3 class="input-name">Ваше имя:</h3>
+        <input class="input" type="text" placeholder="Имя">
+        <span class="input-error">Поле обязательно для заполнения</span>
+      </div>
+
+      <!-- инпут: фото -->
+      <div class="input-align">
+        <h3 class="input-name">Фото:</h3>
+        <div class="input-align-horizontal">
+          <span class="file-name">Name of file 0001111.jpg</span>
+          <button class="remove-button"></button>
+        </div>
+        <button class="upload-button">Загрузить</button>
+      </div>
+
+      <!-- инпут: комментарий -->
+      <div class="input-align">
+        <h3 class="input-name">Комментарий:</h3>
+        <textarea class="input input-textarea" rows="3" placeholder="Я хочу..."></textarea>
+        <span class="input-error input-error_low">Поле обязательно для заполнения</span>
+      </div>
+
+      <button class="order-button">Заказать</button>
+
+    </form>
+
+  </main>
+
+  <script src="./your_design.js"></script>
+
+</body>
+
+</html>
