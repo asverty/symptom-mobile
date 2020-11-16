@@ -35,7 +35,7 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  padding-top: 7vh;
+  padding-top: 20px;
   padding-left: 4vw;
   padding-right: 4vw;
   width: 92vw;
@@ -59,7 +59,7 @@ body {
   font-size: 1.8rem;
   line-height: 1.2;
   text-transform: uppercase;
-  color: white;
+  color:  #FAFAFA;
   background-color: transparent;
   border: none;
   outline: none;
@@ -82,7 +82,7 @@ body {
 }
 
 .fake-header {
-  padding-top: 7vh;
+  padding-top: 20px;
   padding-bottom: 2vh;
   padding-left: 4vw;
   padding-right: 4vw;
@@ -203,7 +203,7 @@ screen and (max-height: 580px) {
   margin-bottom: 10px;
   font-size: 6.8rem;
   line-height: 0.85;
-  color: white;
+  color:  #FAFAFA;
   text-transform: uppercase;
 }
 
@@ -211,7 +211,7 @@ screen and (max-height: 580px) {
   margin-bottom: 3vh;
   font-size: 1rem;
   line-height: 1.2;
-  color: white;
+  color:  #FAFAFA;
 }
 
 .section-text_large {
@@ -247,12 +247,12 @@ screen and (max-height: 580px) {
 /* СЧЁТЧИК */
 .counter {
   position: absolute;
-  top: 16.5vh;
+  top: 14.5vh;
   left: 4vw;
   z-index: 1;
   font-size: 6.8rem;
   line-height: 1;
-  color: white;
+  color:  #FAFAFA;
 }
 
 .counter_hidden {
@@ -307,13 +307,13 @@ screen and (max-height: 580px) {
 .footer__contact-type {
   font-size: 1rem;
   line-height: 1.2;
-  color: white;
+  color:  #FAFAFA;
 }
 
 .footer__contact-data {
   font-size: 3.4rem;
   line-height: 1.2;
-  color: white;
+  color:  #FAFAFA;
 }
 
 .footer__navigation {
@@ -337,7 +337,7 @@ screen and (max-height: 580px) {
 .footer__nav-link {
   font-size: 1.2rem;
   line-height: 1.2;
-  color: white;
+  color:  #FAFAFA;
   text-decoration: none;
   text-transform: uppercase;
 }

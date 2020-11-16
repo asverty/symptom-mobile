@@ -50,7 +50,7 @@ body {
 
 /* ШАПКА */
 .header {
-  padding-top: 7vh;
+  padding-top: 20px;
   padding-bottom: 2vh;
   padding-left: 4vw;
   padding-right: 4vw;
@@ -98,7 +98,7 @@ body {
 }
 
 .fake-header {
-  padding-top: 7vh;
+  padding-top: 20px;
   padding-bottom: 2vh;
   padding-left: 4vw;
   padding-right: 4vw;
