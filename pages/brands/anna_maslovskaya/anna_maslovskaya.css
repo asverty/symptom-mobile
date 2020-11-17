@@ -196,7 +196,7 @@ screen and (max-height: 580px) {
   padding-bottom: 20px;
   padding-left: 4vw;
   padding-right: 4vw;
-  height: 60px;
+  height: 42px;
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
