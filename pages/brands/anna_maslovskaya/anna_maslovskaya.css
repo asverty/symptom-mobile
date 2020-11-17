@@ -170,6 +170,7 @@ screen and (max-height: 580px) {
   display: none;
 }
 
+/* о бренде */
 .about {
   padding-bottom: 90px;
   margin-left: 4vw;
@@ -190,7 +191,90 @@ screen and (max-height: 580px) {
   line-height: 1.2;
 }
 
+/* фильтры */
 .filters {
+  padding-bottom: 20px;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow: auto;
+  list-style: none;
+}
+
+.filter {
+  margin-right: 30px;
+  width: min-content;
+}
+
+.label {
+  position: relative;
+}
+
+.true-radio {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.fake-radio {
+  width: auto;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.fake-radio::before {
+  position: absolute;
+  top: -15px;
+  left: -12px;
+  height: 36px;
+  display: flex;
+  content: "";
+  opacity: 0;
+  border: 1px solid black;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.fake-radio_all::before {
+  width: 54px;
+}
+
+.fake-radio_my::before {
+  width: 50px;
+}
+
+.fake-radio_rings::before {
+  width: 76px;
+}
+
+.fake-radio_bracelets::before {
+  width: 120px;
+}
+
+.fake-radio_pendals::before {
+  width: 100px;
+}
+
+.fake-radio_earrings::before {
+  width: 110px;
+}
+
+.fake-radio_hairpins::before {
+  width: 100px;
+}
+
+.true-radio:checked + 
+.fake-radio::before {
+  opacity: 1;
+}
+
+
+/* .filters {
   padding-bottom: 20px;
   margin-left: 4vw;
   margin-right: 4vw;
@@ -209,8 +293,9 @@ screen and (max-height: 580px) {
 
 .filter:last-of-type {
   margin-right: 0;
-}
+} */
 
+/* карточки */
 .cards {
   margin-bottom: 40px;
   display: grid;
