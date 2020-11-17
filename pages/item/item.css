@@ -25,25 +25,6 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #FAFAFA;
-  flex-grow: 1;
-}
-
-.bg-girl {
-  background-image: url(./images/bg-girl.jpg);
-  background-position: top;
-  background-size: cover;
-}
-
-.bg-boy {
-  background-image: url(./images/bg-boy.jpg);
-  background-position: top;
-  background-size: cover;
-}
-
-.bg-balance {
-  background-image: url(./images/balance.jpg);
-  background-position: top;
-  background-size: cover;
 }
 
 
@@ -66,14 +47,13 @@ body {
 .logo {
   width: 105px;
   height: 31px;
-  background-image: url(../../images/logo-white.png);
+  background-image: url(../../../../images/logo-black.png);
   background-size: cover;
 }
 
 .menu-button {
   font-size: 1.8rem;
   line-height: 1.2;
-  color:  #FAFAFA;
   text-transform: uppercase;
   background-color: transparent;
   border: none;
@@ -90,7 +70,6 @@ body {
   z-index: 1;
   width: 100vw;
   height: 100vh;
-  background-color: #FAFAFA;
 }
 
 .menu-popup_hidden {
@@ -110,7 +89,7 @@ body {
 .fake-logo {
   width: 105px;
   height: 31px;
-  background-image: url(../../images/logo-black.png);
+  background-image: url(../../../../images/logo-black.png);
   background-size: cover;
 }
 
@@ -182,7 +161,7 @@ screen and (max-height: 580px) {
 
 /* ИЗДЕЛИЕ */
 .main {
-  padding-bottom: 6vh;
+  padding-bottom: 10vh;
   padding-left: 4vw;
   padding-right: 4vw;
   display: flex;
@@ -194,109 +173,291 @@ screen and (max-height: 580px) {
   display: none;
 }
 
+
+
+/* об изделии */
+.item {
+  position: relative;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
 .item-brand {
   margin-bottom: 20px;
   font-size: 1.6rem;
   line-height: 1.2;
-  color: #FAFAFA;
   text-transform: uppercase;
 }
 
 .item-name {
+  margin-bottom: 8px;
   font-size: 3.6rem;
   line-height: 1.2;
-  color: #FAFAFA;
-  text-transform: uppercase;
 }
 
-.form {
-  margin-top: auto;
-  display: flex;
-  flex-direction: column;
-  justify-self: flex-end;
+.item-image {
+  margin-bottom: 10px;
+  width: 92vw;
+  height: 92vw;
+  object-fit: contain;
+}
+
+.item-image_pendal {
+  position: absolute;
+  top: -11vh;
+  z-index: -1;
+  margin-bottom: 0;
+  height: auto;
+}
+
+.item-fake-image {
+  margin-bottom: 10px;
+  width: 92vw;
+  height: 92vw;
 }
 
 .item-description {
-  margin-bottom: 20px;
   font-size: 1.4rem;
   line-height: 1.2;
-  color: #FAFAFA;
 }
 
-.material-size {
-  margin-bottom: 20px;
-  display: flex;
-}
 
-.material {
-  width: 46vw;
+
+/* выбор материала, размера, плетения, стороны */
+.select {
+  margin-bottom: 40px;
   display: flex;
   flex-direction: column;
 }
 
-.button-heading {
+.heading {
   margin-bottom: 20px;
   font-size: 1.6rem;
   line-height: 1.2;
-  color: #FAFAFA;
   text-transform: uppercase;
 }
 
-.button {
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex_space-between {
+  margin-bottom: -20px;
+  justify-content: space-between;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 48px);
+  grid-column-gap: 22px;
+  grid-row-gap: 20px;
+}
+
+.label {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.label_gold {
+  margin-right: 10px;
+  width: 95px;
+  height: 47px;
+}
+
+.label_silver {
+  margin-right: 10px;
   width: 102px;
   height: 47px;
+}
+
+.label_size-round {
+  width: 48px;
+  height: 48px;
+}
+
+.label_size-oval {
+  margin-bottom: 20px;
+  width: 98px;
+  height: 47px;
+}
+
+.label_netting {
+  margin-right: 20px;
+  width: 146px;
+  height: 47px;
+}
+
+.label_side {
+  margin-right: 20px;
+  width: 106px;
+  height: 47px;
+}
+
+.true-radio {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.fake-radio {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.6rem;
-  line-height: 1.2;
-  text-transform: uppercase;
-  border-radius: 41px;
+  border-radius: 36px;
 }
 
-.button-silver {
-  background-color: #BDBDBD;
-}
-
-.button-gold {
+.fake-radio_gold {
+  width: 95px;
+  height: 47px;
   background-color: #F2C94C;
 }
 
-.button-transparent {
-  margin-right: 20px;
-  color: #FAFAFA;
-  border: 1px solid #FAFAFA;
+.fake-radio_silver {
+  width: 102px;
+  height: 47px;
+  background-color: #BDBDBD;
+}
+
+.fake-radio_size-round {
+  width: 48px;
+  height: 48px;
+  border: 1px solid black;
+  border-radius: 50%;
   box-sizing: border-box;
   background-color: transparent;
 }
 
-.size {
-  width: 46vw;
+.fake-radio_size-oval {
+  width: 98px;
+  height: 47px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+.fake-radio_netting {
+  width: 146px;
+  height: 47px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+.fake-radio_side {
+  width: 106px;
+  height: 47px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+.fake-radio::before {
+  position: absolute;
+  display: flex;
+  content: "";
+  background-position: center;
+  background-size: cover;
+  opacity: 0;
+}
+
+.fake-radio_gold::before {
+  width: 95px;
+  height: 47px;
+  background-image: url(./images/material-gold-cross.svg);
+}
+
+.fake-radio_silver::before {
+  width: 102px;
+  height: 47px;
+  background-image: url(./images/material-silver-cross.svg);
+}
+
+.fake-radio_size-round::before {
+  width: 48px;
+  height: 48px;
+  background-image: url(./images/size-round-cross.svg);
+}
+
+.fake-radio_size-oval::before {
+  width: 98px;
+  height: 47px;
+  background-image: url(./images/size-oval-cross.svg);
+}
+
+.fake-radio_netting::before {
+  width: 146px;
+  height: 47px;
+  background-image: url(./images/netting-cross.svg);
+}
+
+.fake-radio_side::before {
+  width: 106px;
+  height: 47px;
+  background-image: url(./images/side-cross.svg);
+}
+
+.true-radio:checked + 
+.fake-radio::before {
+  opacity: 1;
+}
+
+.radio-text {
+  font-size: 1.6rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+
+
+/* кастомный размер */
+.custom-size {
+  margin-bottom: 40px;
   display: flex;
   flex-direction: column;
 }
 
-.select-side {
-  margin-bottom: 20px; 
-  display: flex;
-  flex-direction: column;
+.custom-size-heading {
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  text-transform: uppercase;
 }
 
-.buttons-side {
-  display: flex;
+.custom-size-text {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  line-height: 1.2;
 }
 
+.custom-size-button {
+  width: 181px;
+  height: 55px;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  border: 1px solid black;
+  border-radius: 41px;
+  outline: none;
+  background-color: #FAFAFA;
+}
+
+
+
+/* оформление заказа */
 .order {
   margin-top: auto;
   display: flex;
   flex-direction: column;
 }
 
-.total {
+.price {
   margin-bottom: 16px;
   font-size: 3.6rem;
   line-height: 1.2;
-  color: #FAFAFA;
 }
 
 .buy-button {
@@ -304,17 +465,9 @@ screen and (max-height: 580px) {
   height: 55px;
   font-size: 1.8rem;
   line-height: 1.2;
+  color: #FAFAFA;
   border: none;
   border-radius: 41px;
   outline: none;
-  background-color: #F2F2F2;
-}
-
-.buy-button_black {
-  color: #F2F2F2;
   background-color: black;
-}
-
-.text-black {
-  color: black;
 }

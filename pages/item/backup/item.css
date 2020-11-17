@@ -25,6 +25,25 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #FAFAFA;
+  flex-grow: 1;
+}
+
+.bg-girl {
+  background-image: url(./images/bg-girl.jpg);
+  background-position: top;
+  background-size: cover;
+}
+
+.bg-boy {
+  background-image: url(./images/bg-boy.jpg);
+  background-position: top;
+  background-size: cover;
+}
+
+.bg-balance {
+  background-image: url(./images/balance.jpg);
+  background-position: top;
+  background-size: cover;
 }
 
 
@@ -47,13 +66,14 @@ body {
 .logo {
   width: 105px;
   height: 31px;
-  background-image: url(../../../../images/logo-black.png);
+  background-image: url(../../images/logo-white.png);
   background-size: cover;
 }
 
 .menu-button {
   font-size: 1.8rem;
   line-height: 1.2;
+  color:  #FAFAFA;
   text-transform: uppercase;
   background-color: transparent;
   border: none;
@@ -70,6 +90,7 @@ body {
   z-index: 1;
   width: 100vw;
   height: 100vh;
+  background-color: #FAFAFA;
 }
 
 .menu-popup_hidden {
@@ -89,7 +110,7 @@ body {
 .fake-logo {
   width: 105px;
   height: 31px;
-  background-image: url(../../../../images/logo-black.png);
+  background-image: url(../../images/logo-black.png);
   background-size: cover;
 }
 
@@ -161,7 +182,7 @@ screen and (max-height: 580px) {
 
 /* ИЗДЕЛИЕ */
 .main {
-  padding-bottom: 10vh;
+  padding-bottom: 6vh;
   padding-left: 4vw;
   padding-right: 4vw;
   display: flex;
@@ -173,188 +194,96 @@ screen and (max-height: 580px) {
   display: none;
 }
 
-.item {
-  margin-bottom: 40px;
-  display: flex;
-  flex-direction: column;
-}
-
 .item-brand {
+  margin-bottom: 20px;
   font-size: 1.6rem;
   line-height: 1.2;
+  color: #FAFAFA;
   text-transform: uppercase;
 }
 
 .item-name {
-  margin-top: 20px;
   font-size: 3.6rem;
   line-height: 1.2;
+  color: #FAFAFA;
+  text-transform: uppercase;
 }
 
-.item-image {
-  margin-top: 8px;
-  max-width: 92vw;
-  max-height: 92vw;
-  object-fit: contain;
+.form {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-end;
 }
 
 .item-description {
+  margin-bottom: 20px;
   font-size: 1.4rem;
   line-height: 1.2;
+  color: #FAFAFA;
+}
+
+.material-size {
+  margin-bottom: 20px;
+  display: flex;
 }
 
 .material {
-  margin-bottom: 40px;
+  width: 46vw;
   display: flex;
   flex-direction: column;
 }
 
-.material-heading {
+.button-heading {
   margin-bottom: 20px;
   font-size: 1.6rem;
   line-height: 1.2;
+  color: #FAFAFA;
   text-transform: uppercase;
 }
 
-.materials {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.material-gold {
-  margin-bottom: 10px;
-  margin-right: 10px;
-  width: 95px;
+.button {
+  width: 102px;
   height: 47px;
-  font-size: 1.6rem;
-  line-height: 1.2;
-  text-transform: uppercase;
-  outline: none;
-  border: none;
-  border-radius: 36px;
-  background-color: #F2C94C;
-}
-
-.material-silver {
-  margin-bottom: 10px;
-  margin-right: 10px;
-  width: 95px;
-  height: 47px;
-  font-size: 1.6rem;
-  line-height: 1.2;
-  text-transform: uppercase;
-  outline: none;
-  border: none;
-  border-radius: 36px;
-  background-color: #BDBDBD;
-}
-
-.material-gold:last-of-type, 
-.material-silver:last-of-type {
-  margin-right: 0;
-}
-
-.size {
-  margin-bottom: 40px;
-  display: flex;
-  flex-direction: column;
-}
-
-.size-heading {
-  margin-bottom: 20px;
-  font-size: 1.6rem;
-  line-height: 1.2;
-  text-transform: uppercase;
-}
-
-.size-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(48px, 1fr));
-  grid-gap: 20px;
-}
-
-.label {
-  width: 48px;
-  height: 48px;
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.true-radio {
-  position: absolute; 
-  top: 0;
-  left: 0;
-  opacity: 0;
-}
-
-.fake-radio {
-  position: relative;
-  display: flex;
-  width: 48px;
-  height: 48px;
-  background-image: url(../../../../images/radio-cirlce.svg);
-  background-position: center;
-  background-size: cover;
-}
-
-.fake-radio::before {
-  position: absolute;
-  display: flex;
-  content: "";
-  width: 48px;
-  height: 48px;
-  background-image: url(../../../../images/radio-cross.svg);
-  background-position: center;
-  background-size: cover;
-  opacity: 0;
-}
-
-.true-radio:checked + 
-.fake-radio::before {
-  opacity: 1;
-}
-
-.radio-size {
-  position: absolute;
-  width: 48px;
-  height: 48px;
-  font-size: 1.6rem;
-  line-height: 1.2;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  border-radius: 41px;
 }
 
-.custom-size {
-  margin-bottom: 40px;
+.button-silver {
+  background-color: #BDBDBD;
+}
+
+.button-gold {
+  background-color: #F2C94C;
+}
+
+.button-transparent {
+  margin-right: 20px;
+  color: #FAFAFA;
+  border: 1px solid #FAFAFA;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+.size {
+  width: 46vw;
   display: flex;
   flex-direction: column;
 }
 
-.custom-size-heading {
-  margin-bottom: 20px;
-  font-size: 1.6rem;
-  line-height: 1.2;
-  text-transform: uppercase;
+.select-side {
+  margin-bottom: 20px; 
+  display: flex;
+  flex-direction: column;
 }
 
-.custom-size-text {
-  margin-bottom: 20px;
-  font-size: 1.2rem;
-  line-height: 1.2;
-}
-
-.custom-size-button {
-  width: 181px;
-  height: 55px;
-  font-size: 1.8rem;
-  line-height: 1.2;
-  border: 1px solid black;
-  border-radius: 41px;
-  outline: none;
-  background-color: FAFAFA;
+.buttons-side {
+  display: flex;
 }
 
 .order {
@@ -363,10 +292,11 @@ screen and (max-height: 580px) {
   flex-direction: column;
 }
 
-.price {
+.total {
   margin-bottom: 16px;
   font-size: 3.6rem;
   line-height: 1.2;
+  color: #FAFAFA;
 }
 
 .buy-button {
@@ -374,9 +304,17 @@ screen and (max-height: 580px) {
   height: 55px;
   font-size: 1.8rem;
   line-height: 1.2;
-  color: #FAFAFA;
   border: none;
   border-radius: 41px;
   outline: none;
+  background-color: #F2F2F2;
+}
+
+.buy-button_black {
+  color: #F2F2F2;
   background-color: black;
+}
+
+.text-black {
+  color: black;
 }
