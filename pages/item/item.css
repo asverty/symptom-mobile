@@ -231,6 +231,10 @@ screen and (max-height: 580px) {
   flex-direction: column;
 }
 
+.select_material {
+  margin-bottom: 30px;
+}
+
 .heading {
   margin-bottom: 20px;
   font-size: 1.6rem;
@@ -263,15 +267,45 @@ screen and (max-height: 580px) {
 }
 
 .label_gold {
+  margin-bottom: 10px;
   margin-right: 10px;
-  width: 95px;
-  height: 47px;
+  width: 117px;
+  height: 48px;
 }
 
 .label_silver {
+  margin-bottom: 10px;
   margin-right: 10px;
-  width: 102px;
-  height: 47px;
+  width: 128px;
+  height: 48px;
+}
+
+.label_bronze {
+  margin-bottom: 10px;
+  margin-right: 10px;
+  width: 116px;
+  height: 48px;
+}
+
+.label_gold-475 {
+  margin-bottom: 10px;
+  margin-right: 10px;
+  width: 148px;
+  height: 48px;
+}
+
+.label_rhodium {
+  margin-bottom: 10px;
+  margin-right: 10px;
+  width: 108px;
+  height: 48px;
+}
+
+.label_brass {
+  margin-bottom: 10px;
+  margin-right: 10px;
+  width: 113px;
+  height: 48px;
 }
 
 .label_size-round {
@@ -312,14 +346,38 @@ screen and (max-height: 580px) {
 }
 
 .fake-radio_gold {
-  width: 95px;
-  height: 47px;
+  width: 117px;
+  height: 48px;
   background-color: #F2C94C;
 }
 
 .fake-radio_silver {
-  width: 102px;
-  height: 47px;
+  width: 128px;
+  height: 48px;
+  background-color: #BDBDBD;
+}
+
+.fake-radio_bronze {
+  width: 116px;
+  height: 48px;
+  background-color: #F2A579;
+}
+
+.fake-radio_gold-475 {
+  width: 148px;
+  height: 48px;
+  background-color: #F2C94C;
+}
+
+.fake-radio_rhodium {
+  width: 108px;
+  height: 48px;
+  background-color: #CECEB9;
+}
+
+.fake-radio_brass {
+  width: 113px;
+  height: 48px;
   background-color: #BDBDBD;
 }
 
@@ -366,15 +424,39 @@ screen and (max-height: 580px) {
 }
 
 .fake-radio_gold::before {
-  width: 95px;
-  height: 47px;
+  width: 117px;
+  height: 48px;
   background-image: url(./images/material-gold-cross.svg);
 }
 
 .fake-radio_silver::before {
-  width: 102px;
-  height: 47px;
+  width: 128px;
+  height: 48px;
   background-image: url(./images/material-silver-cross.svg);
+}
+
+.fake-radio_bronze::before {
+  width: 116px;
+  height: 48px;
+  background-image: url(./images/material-bronze-cross.svg);
+}
+
+.fake-radio_gold-475::before {
+  width: 148px;
+  height: 48px;
+  background-image: url(./images/material-gold-475-cross.svg);
+}
+
+.fake-radio_rhodium::before {
+  width: 108px;
+  height: 48px;
+  background-image: url(./images/material-rhodium-cross.svg);
+}
+
+.fake-radio_brass::before {
+  width: 113px;
+  height: 48px;
+  background-image: url(./images/material-brass-cross.svg);
 }
 
 .fake-radio_size-round::before {
@@ -435,7 +517,7 @@ screen and (max-height: 580px) {
 }
 
 .custom-size-button {
-  width: 181px;
+  width: 249px;
   height: 55px;
   font-size: 1.8rem;
   line-height: 1.2;

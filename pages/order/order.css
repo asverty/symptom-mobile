@@ -178,7 +178,7 @@ screen and (max-height: 580px) {
   margin-top: 5px;
   margin-bottom: 40px;
   margin-left: 5px;
-  width: 90px;
+  width: 103px;
   height: 28px;
   border: 1px solid black;
   border-radius: 41px;
@@ -207,8 +207,15 @@ screen and (max-height: 580px) {
   line-height: 1.2;
 }
 
+.form {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+/* выбор способа доставки */
 .delivery {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -221,36 +228,113 @@ screen and (max-height: 580px) {
 }
 
 .delivery-methods {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(167px, 1fr));
-  grid-column-gap: 10px;
-  grid-row-gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.method {
-  width: 167px;
-  height: 28px;
+.radio-label {
+  position: relative;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.true-radio {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.fake-radio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 1.8rem;
   line-height: 1.2;
-  background: #FAFAFA;
+  color: black;
   border: 1px solid black;
   border-radius: 41px;
   box-sizing: border-box;
-  outline: none;
+  background-color: transparent;
 }
 
-.method-selected {
-  color: #FAFAFA;
-  background: black;
-  border: none;
+.fake-radio_pickup {
+  width: 167px;
+  height: 28px;
 }
 
-.form {
+.fake-radio_russian-post {
+  width: 167px;
+  height: 28px;
+}
+
+.fake-radio_moscow {
+  width: 206px;
+  height: 28px;
+}
+
+.fake-radio_russia {
+  width: 206px;
+  height: 28px;
+}
+
+.fake-radio_worldwide {
+  width: 206px;
+  height: 28px;
+}
+
+.fake-radio::before {
+  position: absolute;
   display: flex;
-  flex-direction: column;
-  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  color: #FAFAFA;
+  border: none;
+  border-radius: 41px;
+  box-sizing: border-box;
+  background-color: black;
+  opacity: 0;
 }
 
+.fake-radio_pickup::before {
+  width: 167px;
+  height: 28px;
+  content: "Самовывоз";
+}
+
+.fake-radio_russian-post::before {
+  width: 167px;
+  height: 28px;
+  content: "Почта России";
+}
+
+.fake-radio_moscow::before {
+  width: 206px;
+  height: 28px;
+  content: "Доставка по Москве";
+}
+
+.fake-radio_russia::before {
+  width: 206px;
+  height: 28px;
+  content: "Доставка по России";
+}
+
+.fake-radio_worldwide::before {
+  width: 206px;
+  height: 28px;
+  content: "Доставка по миру";
+}
+
+.true-radio:checked + 
+.fake-radio::before {
+  opacity: 1;
+}
+
+/* инпуты */
 .input-align {
   position: relative;
   display: flex;
@@ -293,7 +377,8 @@ textarea {
   top: 152px;
 }
 
-.label {
+/* чекбоксы */
+.checkbox-label {
   position: relative;
   margin-bottom: 40px;
   margin-left: 10px;
@@ -340,6 +425,7 @@ textarea {
   line-height: 1.2;
 }
 
+/* оформление заказа */
 .order {
   margin-top: auto;
   margin-left: 10px;

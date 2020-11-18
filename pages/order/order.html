@@ -47,19 +47,37 @@
   <main class="main">
 
     <button class="back-button">
-      <div class="button-arrow"></div><span class="button-text">Back</span>
+      <div class="button-arrow"></div><span class="button-text">Назад</span>
     </button>
 
-    <div class="delivery">
-      <span class="delivery-heading">Delivery method:</span>
-      <div class="delivery-methods">
-        <button id="method-russian" class="method method-selected">Russian post</button>
-        <button id="method-pickup" class="method">Pickup</button>
-        <button id="method-worldide" class="method">Worldwide</button>
-      </div>
-    </div>
-
     <form class="form">
+
+      <!-- выбор способа доставки -->
+      <div class="delivery">
+        <span class="delivery-heading">Delivery method:</span>
+        <div class="delivery-methods">
+          <label class="radio-label">
+            <input class="true-radio" type="radio" name="delivery" checked>
+            <div class="fake-radio fake-radio_russian-post">Почта России</div>
+          </label>
+          <label class="radio-label">
+            <input class="true-radio" type="radio" name="delivery">
+            <div class="fake-radio fake-radio_pickup">Самовывоз</div>
+          </label>
+          <label class="radio-label">
+            <input class="true-radio" type="radio" name="delivery">
+            <div class="fake-radio fake-radio_worldwide">Доставка по миру</div>
+          </label>
+          <!-- <label class="radio-label">
+            <input class="true-radio" type="radio" name="delivery">
+            <div class="fake-radio fake-radio_moscow">Доставка по Москве</div>
+          </label>
+          <label class="radio-label">
+            <input class="true-radio" type="radio" name="delivery">
+            <div class="fake-radio fake-radio_russia">Доставка по России</div>
+          </label> -->
+        </div>
+      </div>
 
       <!-- инпут: имя -->
       <div class="input-align">
@@ -111,7 +129,7 @@
       </div>
 
       <!-- чекбокс: подписка на обновления -->
-      <label class="label">
+      <label class="checkbox-label">
         <div>
           <input class="true-checkbox" type="checkbox" checked>
           <div class="fake-checkbox"></div>
@@ -121,7 +139,7 @@
       </label>
 
       <!-- чекбокс: согласие с правилами -->
-      <label class="label">
+      <label class="checkbox-label">
         <div>
           <input class="true-checkbox" type="checkbox" checked>
           <div class="fake-checkbox"></div>
@@ -130,6 +148,7 @@
           data</p>
       </label>
 
+      <!-- оформление заказа -->
       <div class="order">
         <span class="total">Total: 30 0000(RUB)</span>
         <button class="buy-button">Order</button>

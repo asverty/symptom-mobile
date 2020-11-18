@@ -164,6 +164,44 @@ screen and (max-height: 580px) {
 
 
 
+/* КУКИ */
+.cookies {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  width: 100vw;
+  height: 406px;
+  display: flex;
+  flex-direction: column;
+  background-color: #0F0F0F;
+}
+
+.cookies_hidden {
+  display: none;
+}
+
+.cookies-text {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  color: #FAFAFA;
+}
+
+.cookies-close-button {
+  width: 48px;
+  height: 48px;
+  align-self: center;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  background-image: url(./images/cookies-close-button.svg);
+  background-position: center;
+}
+
 /* ОСНОВНОЙ РАЗДЕЛ */
 .main_hidden {
   display: none;

@@ -254,6 +254,7 @@ screen and (max-height: 580px) {
 
 .fake-radio_bracelets::before {
   width: 120px;
+  border-radius: 50%;
 }
 
 .fake-radio_pendals::before {
@@ -272,28 +273,6 @@ screen and (max-height: 580px) {
 .fake-radio::before {
   opacity: 1;
 }
-
-
-/* .filters {
-  padding-bottom: 20px;
-  margin-left: 4vw;
-  margin-right: 4vw;
-  display: flex;
-  flex-wrap: nowrap;
-  overflow: auto;
-  list-style: none;
-}
-
-.filter {
-  margin-right: 30px;
-  font-size: 1.6rem;
-  line-height: 1.2;
-  text-transform: uppercase;
-}
-
-.filter:last-of-type {
-  margin-right: 0;
-} */
 
 /* карточки */
 .cards {
