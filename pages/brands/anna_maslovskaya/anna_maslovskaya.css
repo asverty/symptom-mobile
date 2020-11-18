@@ -229,9 +229,9 @@ screen and (max-height: 580px) {
 
 .fake-radio::before {
   position: absolute;
-  top: -15px;
+  top: -16px;
   left: -12px;
-  height: 36px;
+  height: 38px;
   display: flex;
   content: "";
   opacity: 0;
