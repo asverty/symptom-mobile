@@ -312,7 +312,7 @@ screen and (max-height: 580px) {
   bottom: 0;
   z-index: 3;
   padding-top: 6vw;
-  padding-bottom: calc(20vh + 40px);
+  padding-bottom: 20vh;
   padding-left: 4vw;
   padding-right: 4vw;
   width: 100vw;
