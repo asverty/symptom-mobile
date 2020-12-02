@@ -65,9 +65,16 @@ const myFullpage = new fullpage('#fullpage', {
 
 	//events
 	onLeave: function(origin, destination, direction){
+		let footer = document.querySelector('.footer');
 		let counter = document.querySelector('.counter');
 		let numSlides = document.querySelectorAll('.section').length;
-		counter.textContent = `${destination.index + 1}/${numSlides}`
+		if (destination.index + 1 == 5) {
+			counter.textContent = `4/${numSlides - 1}`
+			footer.classList.remove('footer_hidden');
+		} else {
+			counter.textContent = `${destination.index + 1}/${numSlides - 1}`
+			footer.classList.add('footer_hidden');
+		}
 	},
 	afterLoad: function(origin, destination, direction){},
 	afterRender: function(){},

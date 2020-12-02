@@ -315,15 +315,16 @@ screen and (max-height: 580px) {
   padding-bottom: 20vw;
   padding-left: 4vw;
   padding-right: 4vw;
-
   width: 100vw;
   display: flex;
   flex-direction: column;
   background-color: black;
+  transition: bottom 0.3s ease-out;
 }
 
 .footer_hidden {
-  display: none;
+  bottom: -100vh;
+  transition: bottom 0.3s ease-in;
 }
 
 .footer__contacts {
