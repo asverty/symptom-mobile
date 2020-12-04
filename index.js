@@ -101,8 +101,8 @@ closeButton.addEventListener('click', () => menu.classList.toggle('menu-popup_hi
 
 
 // ФУТЕР
-main.addEventListener('click', () => {
-	if (!footer.classList.contains('footer_hidden')) {
+document.addEventListener('click', (event) => {
+	if (event.target !== footer && !footer.classList.contains('footer_hidden')) {
 		footer.classList.add('footer_hidden');
 		myFullpage.silentMoveTo('fourthPage');
 	}
