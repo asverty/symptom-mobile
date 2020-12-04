@@ -318,6 +318,7 @@ screen and (max-height: 580px) {
   flex-direction: column;
   background-color: black;
   transition: bottom 0.3s ease-out;
+  overflow: auto;
 }
 
 .footer_shown {
