@@ -96,7 +96,14 @@ closeButton.addEventListener('click', () => menu.classList.toggle('menu-popup_hi
 // ФУТЕР
 const lastSection = document.querySelector('.section_4');
 lastSection.addEventListener('swiped-up', () => footer.classList.add('footer_shown'));
-lastSection.addEventListener('swiped-down', () => footer.classList.remove('footer_shown'));
-lastSection.addEventListener('click', () => footer.classList.remove('footer_shown'));
-header.addEventListener('click', () => footer.classList.remove('footer_shown'));
-footer.addEventListener('swiped-down', () => footer.classList.remove('footer_shown'));
+
+const closeFooter = () => {
+	footer.classList.remove('footer_shown');
+	myFullpage.fitToSection();
+};
+
+
+lastSection.addEventListener('swiped-down', closeFooter);
+lastSection.addEventListener('click', closeFooter);
+header.addEventListener('click', closeFooter);
+footer.addEventListener('swiped-down', closeFooter);
