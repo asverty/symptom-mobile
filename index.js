@@ -99,11 +99,12 @@ lastSection.addEventListener('swiped-up', () => footer.classList.add('footer_sho
 
 const closeFooter = () => {
 	footer.classList.remove('footer_shown');
-	myFullpage.fitToSection();
 };
+
+lastSection.addEventListener('click', myFullpage.fitToSection());
 
 
 lastSection.addEventListener('swiped-down', closeFooter);
 lastSection.addEventListener('click', closeFooter);
-header.addEventListener('click', closeFooter);
 footer.addEventListener('swiped-down', closeFooter);
+header.addEventListener('click', closeFooter);
