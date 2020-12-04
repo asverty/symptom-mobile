@@ -98,4 +98,5 @@ const lastSection = document.querySelector('.section_4');
 lastSection.addEventListener('swiped-up', () => footer.classList.add('footer_shown'));
 lastSection.addEventListener('swiped-down', () => footer.classList.remove('footer_shown'));
 lastSection.addEventListener('click', () => footer.classList.remove('footer_shown'));
+header.addEventListener('click', () => footer.classList.remove('footer_shown'));
 footer.addEventListener('swiped-down', () => footer.classList.remove('footer_shown'));
