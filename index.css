@@ -310,7 +310,7 @@ screen and (max-height: 580px) {
 /* ПОДВАЛ */
 .footer {
   position: absolute;
-  bottom: 0;
+  bottom: -100vh;
   z-index: 2;
   padding-top: 6vw;
   padding-bottom: 60px;
@@ -323,8 +323,8 @@ screen and (max-height: 580px) {
   transition: bottom 0.3s ease-out;
 }
 
-.footer_hidden {
-  bottom: -100vh;
+.footer_shown {
+  bottom: 0;
   transition: bottom 0.3s ease-in;
 }
 

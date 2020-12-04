@@ -13,7 +13,7 @@ const myFullpage = new fullpage('#fullpage', {
 	//Navigation
 	menu: '#menu',
 	lockAnchors: false,
-	anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'footer'],
+	anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
 	navigation: false,
 	navigationPosition: 'right',
 	navigationTooltips: ['firstSlide', 'secondSlide', 'thirdSlide', 'fourthSlide'],
@@ -76,14 +76,7 @@ const myFullpage = new fullpage('#fullpage', {
 
 	//events
 	onLeave: function(origin, destination, direction){
-		let numSlides = document.querySelectorAll('.section').length;
-		if (destination.index + 1 == 5) {
-			counter.textContent = `4/${numSlides - 1}`
-			footer.classList.remove('footer_hidden');
-		} else {
-			counter.textContent = `${destination.index + 1}/${numSlides - 1}`
-			footer.classList.add('footer_hidden');
-		}
+		counter.textContent = `${destination.index + 1}/4`;
 	},
 	afterLoad: function(origin, destination, direction){},
 	afterRender: function(){},
@@ -101,9 +94,8 @@ closeButton.addEventListener('click', () => menu.classList.toggle('menu-popup_hi
 
 
 // ФУТЕР
-document.addEventListener('click', (event) => {
-	if (event.target !== footer && !footer.classList.contains('footer_hidden')) {
-		footer.classList.add('footer_hidden');
-		myFullpage.silentMoveTo('fourthPage');
-	}
-});
+const lastSection = document.querySelector('.section_4');
+lastSection.addEventListener('swiped-up', () => footer.classList.add('footer_shown'));
+lastSection.addEventListener('swiped-down', () => footer.classList.remove('footer_shown'));
+lastSection.addEventListener('click', () => footer.classList.remove('footer_shown'));
+footer.addEventListener('swiped-down', () => footer.classList.remove('footer_shown'));
