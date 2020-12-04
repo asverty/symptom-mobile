@@ -96,10 +96,7 @@ closeButton.addEventListener('click', () => menu.classList.toggle('menu-popup_hi
 // ФУТЕР
 const lastSection = document.querySelector('.section_4');
 const showFooter = () => footer.classList.add('footer_shown');
-const hideFooter = () => {
-	footer.classList.remove('footer_shown');
-	myFullpage.fitToSection();
-};
+const hideFooter = () => {footer.classList.remove('footer_shown')};
 
 lastSection.addEventListener('swiped-up', showFooter);
 lastSection.addEventListener('swiped-down', hideFooter);
