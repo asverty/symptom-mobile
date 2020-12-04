@@ -1,8 +1,19 @@
+// ОБЪЯВЛЕНИЕ ПЕРЕМЕННЫХ
+const menu = document.querySelector('.menu-popup');
+const header = document.querySelector('.header');
+const main = document.querySelector('.main');
+const footer = document.querySelector('.footer');
+const menuButton = document.querySelector('.menu-button');
+const closeButton = document.querySelector('.menu-close-button');
+const counter = document.querySelector('.counter');
+
+
+// fullPage.js
 const myFullpage = new fullpage('#fullpage', {
 	//Navigation
 	menu: '#menu',
 	lockAnchors: false,
-	anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
+	anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'footer'],
 	navigation: false,
 	navigationPosition: 'right',
 	navigationTooltips: ['firstSlide', 'secondSlide', 'thirdSlide', 'fourthSlide'],
@@ -65,8 +76,6 @@ const myFullpage = new fullpage('#fullpage', {
 
 	//events
 	onLeave: function(origin, destination, direction){
-		let footer = document.querySelector('.footer');
-		let counter = document.querySelector('.counter');
 		let numSlides = document.querySelectorAll('.section').length;
 		if (destination.index + 1 == 5) {
 			counter.textContent = `4/${numSlides - 1}`
@@ -87,19 +96,14 @@ const myFullpage = new fullpage('#fullpage', {
 
 
 // МЕНЮ
-const menu = document.querySelector('.menu-popup');
-const header = document.querySelector('.header');
-const main = document.querySelector('.main');
-const footer = document.querySelector('.footer');
-const menuButton = document.querySelector('.menu-button');
-const closeButton = document.querySelector('.menu-close-button');
+menuButton.addEventListener('click', () => menu.classList.toggle('menu-popup_hidden'));
+closeButton.addEventListener('click', () => menu.classList.toggle('menu-popup_hidden'));
 
-const toggleMenu = () => {
-  menu.classList.toggle('menu-popup_hidden');
-  header.classList.toggle('header_hidden');
-	main.classList.toggle('main_hidden');
-	footer.classList.toggle('footer_hidden');
-}
 
-menuButton.addEventListener('click', toggleMenu);
-closeButton.addEventListener('click', toggleMenu);
+// ФУТЕР
+main.addEventListener('click', () => {
+	if (!footer.classList.contains('footer_hidden')) {
+		footer.classList.add('footer_hidden');
+		myFullpage.silentMoveTo('fourthPage');
+	}
+});
