@@ -77,9 +77,10 @@ const myFullpage = new fullpage('#fullpage', {
 	//events
 	onLeave: function(origin, destination, direction){
 		counter.textContent = `${destination.index + 1}/4`;
+	},
+	afterLoad: function(origin, destination, direction){
 		this.fitToSection();
 	},
-	afterLoad: function(origin, destination, direction){},
 	afterRender: function(){},
 	afterResize: function(width, height){},
 	afterReBuild: function(){},
