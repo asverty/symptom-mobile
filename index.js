@@ -78,9 +78,7 @@ const myFullpage = new fullpage('#fullpage', {
 	onLeave: function(origin, destination, direction){
 		counter.textContent = `${destination.index + 1}/4`;
 	},
-	afterLoad: function(origin, destination, direction){
-		this.fitToSection();
-	},
+	afterLoad: function(origin, destination, direction){},
 	afterRender: function(){},
 	afterResize: function(width, height){},
 	afterReBuild: function(){},
@@ -98,7 +96,10 @@ closeButton.addEventListener('click', () => menu.classList.toggle('menu-popup_hi
 // ФУТЕР
 const lastSection = document.querySelector('.section_4');
 const showFooter = () => footer.classList.add('footer_shown');
-const hideFooter = () => footer.classList.remove('footer_shown');
+const hideFooter = () => {
+	footer.classList.remove('footer_shown');
+	myFullpage.fitToSection();
+};
 
 lastSection.addEventListener('swiped-up', showFooter);
 lastSection.addEventListener('swiped-down', hideFooter);
