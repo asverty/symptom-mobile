@@ -77,6 +77,7 @@ const myFullpage = new fullpage('#fullpage', {
 	//events
 	onLeave: function(origin, destination, direction){
 		counter.textContent = `${destination.index + 1}/4`;
+		this.fitToSection();
 	},
 	afterLoad: function(origin, destination, direction){},
 	afterRender: function(){},
@@ -95,16 +96,11 @@ closeButton.addEventListener('click', () => menu.classList.toggle('menu-popup_hi
 
 // ФУТЕР
 const lastSection = document.querySelector('.section_4');
-lastSection.addEventListener('swiped-up', () => footer.classList.add('footer_shown'));
+const showFooter = () => footer.classList.add('footer_shown');
+const hideFooter = () => footer.classList.remove('footer_shown');
 
-const closeFooter = () => {
-	footer.classList.remove('footer_shown');
-};
-
-lastSection.addEventListener('click', myFullpage.fitToSection());
-
-
-lastSection.addEventListener('swiped-down', closeFooter);
-lastSection.addEventListener('click', closeFooter);
-footer.addEventListener('swiped-down', closeFooter);
-header.addEventListener('click', closeFooter);
+lastSection.addEventListener('swiped-up', showFooter);
+lastSection.addEventListener('swiped-down', hideFooter);
+lastSection.addEventListener('click', hideFooter);
+footer.addEventListener('swiped-down', hideFooter);
+header.addEventListener('click', hideFooter);
