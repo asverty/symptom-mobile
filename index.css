@@ -349,6 +349,7 @@ screen and (max-height: 580px) {
   font-size: 3.4rem;
   line-height: 1.2;
   color:  #FAFAFA;
+  text-decoration: none;
 }
 
 .footer__navigation {
