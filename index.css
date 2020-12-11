@@ -346,6 +346,7 @@ screen and (max-height: 580px) {
 }
 
 .footer__contact-data {
+  width: min-content;
   font-size: 3.4rem;
   line-height: 1.2;
   color:  #FAFAFA;
