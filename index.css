@@ -308,6 +308,7 @@ screen and (max-height: 580px) {
   left: 0;
   z-index: 2;
   width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   background-color: black;
